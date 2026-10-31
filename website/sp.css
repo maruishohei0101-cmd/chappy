@@ -8,7 +8,7 @@
 .container {
   padding: 0 16px;
 }
-
+.w100{width:100%}
 /* ヘッダー周り */
 .header-inner {
   height: 64px;
