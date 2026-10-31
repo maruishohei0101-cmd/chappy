@@ -89,13 +89,32 @@
   gap: 20px;
 }
 
-.product-thumb {
-  height: 220px;
+
+product-card {
+  display: flex;
+  flex-direction: column;
+  height: auto;
 }
 
+/* 画像枠：高さを固定せず、画像の自然な高さに任せる */
+.product-thumb {
+  width: 100%;
+  height: auto;
+  position: static; /* absolute等の悪さをリセット */
+}
+
+/* 画像本体：横幅100%・縦は自動 */
+.product-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* テキストエリア：無理な余白を消して画像の真下に置く */
 .product-body {
   padding: 16px;
-   margin-top:60px;
+  margin-top: 0;
+  position: static;
 }
 
 .product-footer {
