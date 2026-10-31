@@ -95,6 +95,7 @@
 
 .product-body {
   padding: 16px;
+   margin-top:40px;
 }
 
 .product-footer {
@@ -142,6 +143,10 @@
   padding: 24px 20px 32px;
   max-height: 90vh;
   overflow-y: auto;
+}
+
+.faq-container{
+   padding:15px;
 }
 
 /* カート：フル幅 */
