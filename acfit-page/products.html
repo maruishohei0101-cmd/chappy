@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>商品一覧 | ACFIT JAPAN</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <section class="section-block">
+    <div class="container">
+      <div class="section-title">
+        <h2>商品一覧</h2>
+      </div>
+
+      <!-- カテゴリー絞り込みタブ（URLパラメータなしで切替） -->
+      <div class="category-tabs" id="category-tabs">
+        <button class="cat-tab active" data-cat="ALL">すべて</button>
+        <button class="cat-tab" data-cat="CLEANSING & WASH">CLEANSING & WASH</button>
+        <button class="cat-tab" data-cat="BASIC SKINCARE">BASIC SKINCARE</button>
+        <button class="cat-tab" data-cat="SPECIAL CARE">SPECIAL CARE</button>
+        <button class="cat-tab" data-cat="SET">SPECIAL SET</button>
+      </div>
+
+      <!-- 商品カード一覧 -->
+      <div class="product-grid" id="all-products-grid"></div>
+    </div>
+  </section>
+
+  <script src="js/products.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const rank = getCurrentRank();
+      const grid = document.getElementById("all-products-grid");
+      const tabs = document.querySelectorAll(".cat-tab");
+
+      // URLに ?category=〇〇 があれば初期選択
+      const urlParams = new URLSearchParams(window.location.search);
+      let currentCat = urlParams.get("category") || "ALL";
+
+      function renderProducts(category) {
+        const allItems = Object.values(PRODUCTS_DATA);
+        const filtered = category === "ALL"
+          ? allItems
+          : allItems.filter(item => item.category === category);
+
+        grid.innerHTML = filtered.map(item => `
+          <article class="product-card">
+            <a href="product.html?id=${item.id}">
+              <div class="product-card-thumb">
+                ${item.tag ? `<span class="product-badge">${item.tag}</span>` : ""}
+                <img src="${item.images[0]}" alt="${item.name}">
+              </div>
+              <div class="product-card-body">
+                <div class="product-cat">${item.category}</div>
+                <h3 class="product-card-title">${item.name}</h3>
+                <div class="product-card-price">¥${item.prices[rank].toLocaleString()} <small>（税込）</small></div>
+              </div>
+            </a>
+          </article>
+        `).join("");
+
+        tabs.forEach(tab => {
+          tab.classList.toggle("active", tab.dataset.cat === category);
+        });
+      }
+
+      tabs.forEach(tab => {
+        tab.addEventListener("click", () => {
+          renderProducts(tab.dataset.cat);
+        });
+      });
+
+      renderProducts(currentCat);
+    });
+  </script>
+</body>
+</html>
