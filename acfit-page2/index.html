@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACFIT JAPAN | 公式オンラインストア</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ <section class="hero-section2">
+  <!-- 動画ラッパー -->
+  <div class="hero-video-wrap">
+    <!-- videoタグ自体に直接 src を書く方法（推奨） -->
+<video class="hero-bg-video" autoplay muted loop playsinline src="videos/acfit.mp4"></video>
+    <div class="hero-overlay"></div>
+  </div>
+
+  <!-- 前面画像 -->
+  <div class="hero-content hero-center-img">
+    <p>ACFIT JAPAN</p>
+      <h1 class="fs50 bold">Let's ACFIT</h1>
+      <p class="m10">20年にわたり美を追求し続けてきた、私たち。<br>
+        ACFITとともに、あなた本来の輝きをまとう素肌へ。</p>
+      <!-- <a href="products.html" class="btn-outline-white">商品一覧を見る</a> -->
+
+  </div>
+</section>
+
+  <!-- ヒーローエリア -->
+  <!-- <section class="hero-section">
+    <div class="hero-content">
+      <p>ACFIT JAPAN</p>
+      <h1 class="fs50 bold">Let's ACFIT</h1>
+      <p class="m10">20年にわたり美を追求し続けてきた、私たち。<br>
+        ACFITとともに、あなた本来の輝きをまとう素肌へ。</p>
+    </div>
+  </section> -->
+
+    <section class="about-hero-section">
+      <div class="about-hero-inner">
+        <span class="about-hero-subtitle">about us</span>
+        <h2 class="about-hero-title">スキンケアの、その先へ。</h2>
+        <p class="about-hero-desc">
+          単なるお手入れの枠を超え、<br>
+          あなたらしい自信を取り戻すお手伝いをすることが、<br>
+          私たちの使命です。
+        </p>
+        <a href="#" class="about-hero-btn">Read More <span class="arrow">→</span></a>
+      </div>
+    </section>
+
+
+
+  <!-- ブランド説明 -->
+  <div class="concept-grid">
+        <div class="concept-img">
+          <img src="images/2.jpg" alt="ブランドコンセプト" class="img-pc">
+          <img src="images/2_sp.jpg" alt="ブランドコンセプト" class="img-sp">
+        </div>
+        <div class="concept-text">
+          <p class="fs10 italic" style="color: navy;">• our value</p>
+          <h3 class="mincho fs30">すべての成分に、<br>明確な理由がある。</h3>
+          <p>不要なものは削ぎ落とし、本当に必要なものだけを厳選する。<br>
+            あなたの素肌が心から求める、理想の美しさへと導きます。</p>
+        </div>
+      </div>
+    <div class="container3">
+      <div class="concept-grid3">
+        <div class="concept-img3">
+          <img src="images/3.jpg" alt="ブランドコンセプト" class="img-pc">
+          <img src="images/3_sp.jpg" alt="ブランドコンセプト" class="img-sp">
+        </div>
+        <div class="concept-text3">
+          <p class="fs10 italic" style="color: navy;">• our products</p>
+          <h3 class="mincho fs30">あなた自身の肌で<br>体験を。</h3>
+          <p>もう、肌悩みで迷わない。<br>そんなあなたのためにご用意した、特別な選択肢です。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ピックアップ商品 -->
+  <section class="section-block">
+    <div class="container">
+      <div class="section-title">
+        <h2>おすすめ商品</h2>
+      </div>
+      <div class="pickup-slider-wrap">
+        <button type="button" class="pickup-slider-arrow prev" id="pickup-prev" aria-label="前へ">&#10094;</button>
+        <div class="product-grid" id="pickup-grid"></div>
+        <button type="button" class="pickup-slider-arrow next" id="pickup-next" aria-label="次へ">&#10095;</button>
+      </div>
+      <div class="center-btn-wrap">
+        <a href="products.html" class="btn-dark">すべての商品を見る</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/products.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const rank = getCurrentRank();
+      const grid = document.getElementById("pickup-grid");
+
+      // 最初の3商品をピックアップ表示（増やす場合は slice(0, 4) 等に変更）
+      const items = Object.values(PRODUCTS_DATA).slice(0, 3);
+
+      grid.innerHTML = items.map(item => `
+        <article class="product-card">
+          <a href="product.html?id=${item.id}">
+            <div class="product-card-thumb">
+              ${item.tag ? `<span class="product-badge">${item.tag}</span>` : ""}
+              <img src="${item.images[0]}" alt="${item.name}">
+            </div>
+            <div class="product-card-body">
+              <div class="product-cat">${item.category}</div>
+              <h3 class="product-card-title">${item.name}</h3>
+              <div class="product-card-price">¥${item.prices[rank].toLocaleString()}${item.variants ? "〜" : ""} <small>（税込）</small></div>
+            </div>
+          </a>
+        </article>
+      `).join("");
+
+      // SPスライダーの矢印ボタン操作
+      const prevBtn = document.getElementById("pickup-prev");
+      const nextBtn = document.getElementById("pickup-next");
+      if (prevBtn && nextBtn) {
+        prevBtn.addEventListener("click", () => {
+          const cardWidth = grid.querySelector(".product-card")?.offsetWidth || 260;
+          grid.scrollBy({ left: -(cardWidth + 14), behavior: "smooth" });
+        });
+        nextBtn.addEventListener("click", () => {
+          const cardWidth = grid.querySelector(".product-card")?.offsetWidth || 260;
+          grid.scrollBy({ left: cardWidth + 14, behavior: "smooth" });
+        });
+      }
+    });
+  </script>
+</body>
+</html>

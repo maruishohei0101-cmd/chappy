@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>商品詳細 | ACFIT JAPAN</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-product">
+
+  <!-- 商品メイン情報（スライダー ＋ 説明・金額・カート） -->
+  <section class="detail-top-section">
+    <div class="container">
+      <div class="detail-grid" id="detail-area">
+        <!-- 左：画像スライダー -->
+        <div class="slider-wrapper">
+          <div class="slider-main">
+            <img id="slider-main-img" src="" alt="">
+            <button class="slider-arrow prev" id="slider-prev">&#10094;</button>
+            <button class="slider-arrow next" id="slider-next">&#10095;</button>
+          </div>
+          <div class="slider-thumbs" id="slider-thumbs"></div>
+        </div>
+
+        <!-- 右：商品名・金額・説明・カート -->
+        <div class="detail-info">
+          <div class="detail-cat" id="detail-cat"></div>
+          <h1 class="detail-title" id="detail-title">読み込み中...</h1>
+          <p class="detail-catch" id="detail-catch"></p>
+
+          <div class="detail-price-box">
+            <div class="detail-rank-badge" id="detail-rank-label"></div>
+            <div class="detail-price">¥<span id="detail-price">0</span> <small>（税込）</small></div>
+          </div>
+
+          <!-- 画像デザインのカスタム容量プルダウン（バリエーションがある商品のみ自動表示） -->
+          <div class="custom-dropdown" id="variant-dropdown" style="display: none;">
+            <button type="button" class="dropdown-header" id="dropdown-header">
+              <span id="dropdown-header-text">選択</span>
+              <span class="dropdown-chevron"></span>
+            </button>
+            <div class="dropdown-list" id="dropdown-list"></div>
+          </div>
+
+          <p class="detail-desc" id="detail-desc"></p>
+
+          <div class="purchase-controls">
+            <select id="qty-select" class="qty-select">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+            <button class="add-cart-btn" id="add-cart-btn">カートに入れる</button>
+          </div>
+
+          <table class="spec-table" id="spec-table"></table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 下部：商品ごとの簡易LPエリア -->
+  <section class="detail-lp-section">
+    <div class="lp-section-header">
+      <span>PRODUCT FEATURES</span>
+      <h2>商品のこだわり・特徴</h2>
+    </div>
+    <div class="lp-container" id="detail-lp-area"></div>
+  </section>
+
+  <script src="js/products.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // 1. URLパラメータ「?id=〇〇」を取得（未指定時は item_01 を表示）
+      const params = new URLSearchParams(window.location.search);
+      const productId = params.get("id") || "item_01";
+      const product = PRODUCTS_DATA[productId];
+
+      if (!product) {
+        document.getElementById("detail-area").innerHTML = "<p>指定された商品が見つかりませんでした。</p>";
+        return;
+      }
+
+      document.title = `${product.name} | ACFIT JAPAN`;
+
+      // 2. テキスト・価格・スペックの反映
+      const rank = getCurrentRank();
+      document.getElementById("detail-cat").textContent = product.category;
+      document.getElementById("detail-title").textContent = product.name;
+      document.getElementById("detail-catch").textContent = product.catchcopy;
+      document.getElementById("detail-rank-label").textContent = RANK_LABELS[rank];
+
+      const descEl = document.getElementById("detail-desc");
+      descEl.style.whiteSpace = "pre-line";
+      descEl.textContent = product.description;
+
+      // 3. カスタムドロップダウン制御（バリエーションがある場合）
+      let selectedVariantId = null;
+      const dropdown = document.getElementById("variant-dropdown");
+      const dropdownHeader = document.getElementById("dropdown-header");
+      const dropdownHeaderText = document.getElementById("dropdown-header-text");
+      const dropdownList = document.getElementById("dropdown-list");
+
+      if (product.variants && product.variants.length > 0) {
+        dropdown.style.display = "block";
+        selectedVariantId = product.variants[0].id;
+        document.getElementById("detail-price").textContent = product.variants[0].prices[rank].toLocaleString();
+
+        // 選択肢リストの生成（1段目：容量 / 2段目：太字金額）
+        dropdownList.innerHTML = product.variants.map((v, idx) => {
+          const vPrice = v.prices[rank].toLocaleString();
+          return `
+            <button type="button" class="dropdown-option ${idx === 0 ? "is-selected" : ""}" data-id="${v.id}">
+              <span class="dropdown-opt-label">${v.label}</span>
+              <span class="dropdown-opt-price">¥${vPrice}</span>
+            </button>
+          `;
+        }).join("");
+
+        // 開閉トグル
+        dropdownHeader.addEventListener("click", () => {
+          dropdown.classList.toggle("is-open");
+        });
+
+        // 項目選択時の処理
+        dropdownList.querySelectorAll(".dropdown-option").forEach(opt => {
+          opt.addEventListener("click", () => {
+            selectedVariantId = opt.dataset.id;
+            const chosen = product.variants.find(v => v.id === selectedVariantId);
+            if (chosen) {
+              // 上のメイン金額を更新
+              document.getElementById("detail-price").textContent = chosen.prices[rank].toLocaleString();
+              // ヘッダー文字を選択した容量に更新（"Net Wt. (Required)" のままにしたい場合は下の1行を消してください）
+              dropdownHeaderText.textContent = `内容量: ${chosen.label}`;
+            }
+
+            dropdownList.querySelectorAll(".dropdown-option").forEach(el => el.classList.remove("is-selected"));
+            opt.classList.add("is-selected");
+            dropdown.classList.remove("is-open");
+          });
+        });
+      } else {
+        document.getElementById("detail-price").textContent = product.prices[rank].toLocaleString();
+      }
+
+      // スペック表
+      document.getElementById("spec-table").innerHTML = (product.specs || []).map(s => `
+        <tr>
+          <th>${s.label}</th>
+          <td>${s.value}</td>
+        </tr>
+      `).join("");
+
+      // 4. 商品ごとの簡易LP（HTMLブロック）を流し込み
+      document.getElementById("detail-lp-area").innerHTML = product.lpHtml || "";
+
+      // 5. 画像スライダーの構築
+      let currentSlide = 0;
+      const mainImg = document.getElementById("slider-main-img");
+      const thumbsContainer = document.getElementById("slider-thumbs");
+
+      function updateSlider(index) {
+        currentSlide = (index + product.images.length) % product.images.length;
+        mainImg.src = product.images[currentSlide];
+        document.querySelectorAll(".slider-thumb").forEach((thumb, idx) => {
+          thumb.classList.toggle("active", idx === currentSlide);
+        });
+      }
+
+      thumbsContainer.innerHTML = product.images.map((src, idx) => `
+        <img src="${src}" class="slider-thumb ${idx === 0 ? "active" : ""}" data-index="${idx}" alt="サムネイル${idx + 1}">
+      `).join("");
+
+      thumbsContainer.querySelectorAll(".slider-thumb").forEach(thumb => {
+        thumb.addEventListener("click", () => {
+          updateSlider(Number(thumb.dataset.index));
+        });
+      });
+
+      document.getElementById("slider-prev").addEventListener("click", () => updateSlider(currentSlide - 1));
+      document.getElementById("slider-next").addEventListener("click", () => updateSlider(currentSlide + 1));
+
+      updateSlider(0);
+
+      // 6. カート追加ボタン
+      document.getElementById("add-cart-btn").addEventListener("click", () => {
+        const qty = Number(document.getElementById("qty-select").value);
+        addToCart(product.id, qty, selectedVariantId);
+      });
+    });
+  </script>
+</body>
+</html>
