@@ -943,7 +943,6 @@ img {
 .lp-container {
   max-width: 860px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 .lp-block {
@@ -1343,7 +1342,7 @@ img {
     gap: 24px;
   }
 
-  body.page-product {
+  .page-product {
     padding: 10px;
   }
 
@@ -1477,4 +1476,681 @@ img {
 }
 
 
+}
+
+/* ==========================================================================
+   細LP 共通
+========================================================================== */
+.vsang-lp-wrap {
+  width: 100%;
+  background-color: #ffffff;
+  color: #111111;
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  line-height: 1.8;
+  letter-spacing: 0.04em;
+}
+
+.vsang-lp-wrap sup {
+  font-size: 0.65em;
+  line-height: 0;
+  vertical-align: super;
+}
+
+/* PC中央幅：1040px基準で、ウィンドウが狭い時は左右24px余白で自動フィット */
+.vsang-lp-inner {
+  width: min(1040px, calc(100% - 48px));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vsang-lp-pc-only {
+  display: inline;
+}
+
+.vsang-lp-sp-only {
+  display: none;
+}
+
+/* セクション分割（影なし・白と淡い青の面切り替え＋細線） */
+.vsang-lp-sec {
+  padding: 96px 0;
+  background-color: #ffffff;
+  border-top: 1px solid #e6eff5;
+}
+
+.vsang-lp-sec--blue {
+  background-color: #f4f8fb;
+}
+
+.vsang-lp-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #d9e6f0;
+  margin: 64px 0;
+}
+
+/* センター見出し（リファ風タイポグラフィ＋細アンダーライン） */
+.vsang-lp-heading {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.vsang-lp-heading-en {
+  display: block;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  color: #5b829e;
+  margin-bottom: 10px;
+}
+
+.vsang-lp-heading-ja {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #111111;
+  letter-spacing: 0.06em;
+}
+
+.vsang-lp-heading-line {
+  width: 48px;
+  height: 1px;
+  background-color: #111111;
+  margin: 22px auto 0;
+}
+
+.vsang-lp-heading-desc {
+  margin-top: 24px;
+  font-size: 15px;
+  color: #333333;
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", sans-serif;
+}
+
+/* FV（ファーストビュー） */
+.vsang-lp-fv {
+  /* padding: 80px 0 96px; */
+  background: linear-gradient(180deg, #eef5fa 0%, #ffffff 100%);
+  text-align: center;
+}
+
+.vsang-lp-fv-head {
+  /* margin-bottom: 48px; */
+}
+
+.vsang-lp-fv-brand {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.28em;
+  color: #4f7896;
+  margin-bottom: 14px;
+}
+
+.vsang-lp-fv-lead {
+  font-size: 18px;
+  color: #111111;
+  margin-bottom: 12px;
+}
+
+.vsang-lp-fv-title {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 38px;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  color: #111111;
+  line-height: 1.3;
+  margin-bottom: 18px;
+}
+
+.vsang-lp-fv-sub {
+  font-size: 15px;
+  color: #444444;
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", sans-serif;
+}
+
+/* 画像配置用プレースホルダー */
+.vsang-lp-placeholder {
+  width: 100%;
+  background-color: #e8f1f8;
+  border: 1px dashed #9cb8cd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #4b6f8a;
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  font-size: 13px;
+  padding: 16px;
+}
+
+.vsang-lp-placeholder--fv {
+  height: 520px;
+}
+
+.vsang-lp-placeholder--land {
+  height: 300px;
+}
+
+.vsang-lp-placeholder--sq {
+  height: 420px;
+}
+
+/* PC最大2カラムグリッド（minmax(0, 1fr)で子要素のはみ出し防止） */
+.vsang-lp-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 48px;
+  row-gap: 48px;
+}
+
+/* お声・使用感 */
+.vsang-lp-voice-item {
+  border-bottom: 1px solid #d5e3ed;
+  padding-bottom: 28px;
+}
+
+.vsang-lp-voice-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111111;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.vsang-lp-voice-text {
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", sans-serif;
+  font-size: 14px;
+  color: #333333;
+  line-height: 1.85;
+}
+
+/* ソリューション一覧（細線区切り） */
+.vsang-lp-sol-item {
+  border-top: 1px solid #111111;
+  padding-top: 22px;
+}
+
+.vsang-lp-sol-num {
+  display: inline-block;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: #4f7896;
+  margin-bottom: 8px;
+}
+
+.vsang-lp-sol-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111111;
+  margin-bottom: 10px;
+}
+
+.vsang-lp-sol-text {
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", sans-serif;
+  font-size: 14px;
+  color: #333333;
+}
+
+/* 2カラム特徴解説 */
+.vsang-lp-split {
+  align-items: center;
+}
+
+.vsang-lp-split-title {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #111111;
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #111111;
+}
+
+.vsang-lp-split-text {
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", sans-serif;
+  font-size: 15px;
+  color: #222222;
+  line-height: 1.9;
+}
+
+.vsang-lp-tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.vsang-lp-tags li {
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  font-size: 13px;
+  color: #111111;
+  background-color: #ffffff;
+  border: 1px solid #b8d0e0;
+  padding: 6px 14px;
+}
+
+.vsang-lp-bullets {
+  list-style: none;
+  margin-top: 20px;
+  border-top: 1px solid #d9e6f0;
+}
+
+.vsang-lp-bullets li {
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  font-size: 14px;
+  color: #222222;
+  padding: 9px 0;
+  border-bottom: 1px solid #d9e6f0;
+}
+
+/* 成分・機能ブロック */
+.vsang-lp-detail-label {
+  display: block;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: #4f7896;
+  margin-bottom: 6px;
+}
+
+.vsang-lp-detail-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111111;
+  margin-bottom: 18px;
+}
+
+.vsang-lp-detail-text {
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", sans-serif;
+  font-size: 14px;
+  color: #333333;
+  line-height: 1.85;
+  margin-top: 18px;
+}
+
+/* テクスチャー */
+.vsang-lp-tex-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111111;
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+.vsang-lp-tex-text {
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", sans-serif;
+  font-size: 14px;
+  color: #333333;
+}
+
+/* ご使用方法（ステップ） */
+.vsang-lp-steps {
+  border-top: 1px solid #111111;
+}
+
+.vsang-lp-step-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 28px 0;
+  border-bottom: 1px solid #c9dce9;
+}
+
+.vsang-lp-step-head {
+  width: 360px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 18px;
+}
+
+.vsang-lp-step-num {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: #4f7896;
+}
+
+.vsang-lp-step-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111111;
+}
+
+.vsang-lp-step-text {
+  flex: 1;
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", sans-serif;
+  font-size: 14px;
+  color: #222222;
+}
+
+/* 製品情報テーブル */
+.vsang-lp-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 1px solid #111111;
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", sans-serif;
+  font-size: 14px;
+}
+
+.vsang-lp-table th,
+.vsang-lp-table td {
+  padding: 20px 16px;
+  border-bottom: 1px solid #d9e6f0;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.8;
+}
+
+.vsang-lp-table th {
+  width: 220px;
+  font-weight: 600;
+  color: #111111;
+  background-color: #f7fafc;
+}
+
+.vsang-lp-table td {
+  color: #333333;
+}
+
+/* 購入エリア（影なし・細枠線） */
+.vsang-lp-buy-box {
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #cfe0ec;
+  padding: 48px;
+}
+
+.vsang-lp-buy-brand {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.24em;
+  color: #4f7896;
+  margin-bottom: 8px;
+}
+
+.vsang-lp-buy-name {
+  font-size: 24px;
+  font-weight: 600;
+  color: #111111;
+  line-height: 1.4;
+}
+
+.vsang-lp-buy-en {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  color: #666666;
+  margin-top: 4px;
+  margin-bottom: 24px;
+}
+
+.vsang-lp-buy-price-row {
+  padding: 18px 0;
+  border-top: 1px solid #e2edf4;
+  border-bottom: 1px solid #e2edf4;
+  margin-bottom: 20px;
+}
+
+.vsang-lp-buy-price {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: #111111;
+}
+
+.vsang-lp-buy-tax {
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  font-size: 13px;
+  color: #555555;
+  margin-left: 6px;
+}
+
+.vsang-lp-buy-desc {
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", sans-serif;
+  font-size: 14px;
+  color: #333333;
+  margin-bottom: 28px;
+}
+
+.vsang-lp-buy-select-wrap {
+  margin-bottom: 18px;
+}
+
+.vsang-lp-buy-label {
+  display: block;
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  font-size: 12px;
+  color: #555555;
+  margin-bottom: 6px;
+}
+
+.vsang-lp-buy-select {
+  width: 100%;
+  height: 48px;
+  padding: 0 36px 0 14px;
+  font-size: 14px;
+  color: #111111;
+  background-color: #ffffff;
+  border: 1px solid #111111;
+  border-radius: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, #111111 50%),
+                    linear-gradient(135deg, #111111 50%, transparent 50%);
+  background-position: calc(100% - 18px) 20px, calc(100% - 13px) 20px;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+}
+
+.vsang-lp-buy-btn {
+  width: 100%;
+  height: 54px;
+  background-color: #111111;
+  color: #ffffff;
+  border: 1px solid #111111;
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  cursor: pointer;
+}
+
+/* 注釈 */
+.vsang-lp-note {
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", sans-serif;
+  font-size: 12px;
+  color: #666666;
+  margin-top: 24px;
+  line-height: 1.7;
+}
+
+/* ==========================================================================
+   SP Responsive（既存CSSと同じ768px以下：左右padding 10px・1カラム縦積み）
+========================================================================== */
+@media screen and (max-width: 768px) {
+  .vsang-lp-inner {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .vsang-lp-pc-only {
+    display: none;
+  }
+
+  .vsang-lp-sp-only {
+    display: inline;
+  }
+
+  .vsang-lp-sec {
+    padding: 56px 0;
+  }
+
+  .vsang-lp-divider {
+    margin: 40px 0;
+  }
+
+  .vsang-lp-heading {
+    margin-bottom: 36px;
+  }
+
+  .vsang-lp-heading-en {
+    font-size: 11px;
+    letter-spacing: 0.18em;
+  }
+
+  .vsang-lp-heading-ja {
+    font-size: 21px;
+    line-height: 1.45;
+  }
+
+  .vsang-lp-heading-line {
+    width: 36px;
+    margin-top: 16px;
+  }
+
+  .vsang-lp-heading-desc {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .vsang-lp-fv {
+    /* padding: 48px 0 56px; */
+  }
+
+  .vsang-lp-fv-head {
+    /* margin-bottom: 28px; */
+  }
+
+  .vsang-lp-fv-lead {
+    font-size: 15px;
+  }
+
+  .vsang-lp-fv-title {
+    font-size: 26px;
+    letter-spacing: 0.1em;
+  }
+
+  .vsang-lp-fv-sub {
+    font-size: 13px;
+  }
+
+  .vsang-lp-placeholder--fv {
+    height: 260px;
+  }
+
+  .vsang-lp-placeholder--land {
+    height: 210px;
+  }
+
+  .vsang-lp-placeholder--sq {
+    height: 260px;
+  }
+
+  .vsang-lp-grid {
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+  }
+
+  .vsang-lp-voice-title {
+    font-size: 16px;
+  }
+
+  .vsang-lp-voice-text {
+    font-size: 13px;
+  }
+
+  .vsang-lp-sol-title {
+    font-size: 17px;
+  }
+
+  .vsang-lp-sol-text {
+    font-size: 13px;
+  }
+
+  .vsang-lp-split-title {
+    font-size: 18px;
+    margin-bottom: 14px;
+    padding-bottom: 12px;
+  }
+
+  .vsang-lp-split-text {
+    font-size: 14px;
+  }
+
+  .vsang-lp-detail-title {
+    font-size: 18px;
+  }
+
+  .vsang-lp-detail-text {
+    font-size: 13px;
+  }
+
+  .vsang-lp-tex-title {
+    font-size: 16px;
+  }
+
+  .vsang-lp-tex-text {
+    font-size: 13px;
+  }
+
+  .vsang-lp-step-row {
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px 0;
+  }
+
+  .vsang-lp-step-head {
+    width: 100%;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .vsang-lp-step-title {
+    font-size: 16px;
+  }
+
+  .vsang-lp-step-text {
+    font-size: 13px;
+  }
+
+  .vsang-lp-table {
+    font-size: 13px;
+  }
+
+  .vsang-lp-table th,
+  .vsang-lp-table td {
+    display: block;
+    width: 100%;
+    padding: 12px 10px;
+  }
+
+  .vsang-lp-table th {
+    border-bottom: none;
+    padding-bottom: 4px;
+  }
+
+  .vsang-lp-table td {
+    padding-top: 4px;
+  }
+
+  .vsang-lp-buy-box {
+    padding: 24px 16px;
+  }
+
+  .vsang-lp-buy-name {
+    font-size: 20px;
+  }
+
+  .vsang-lp-buy-price {
+    font-size: 24px;
+  }
 }
