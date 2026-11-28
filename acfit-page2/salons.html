@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>正規取扱サロンを探す | ACFIT JAPAN</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="page-header">
+    <h1>正規取扱サロンを探す</h1>
+  </div>
+
+  <main class="salon-search-container">
+    <div class="filter-box">
+      <div class="filter-group" id="area-filter-group">
+        <span class="filter-label">エリアで絞る</span>
+        <div class="area-buttons" id="area-buttons">
+          <button type="button" class="area-btn is-active" data-area="ALL">すべて</button>
+          <button type="button" class="area-btn" data-area="北海道・東北">北海道・東北</button>
+          <button type="button" class="area-btn" data-area="関東">関東</button>
+          <button type="button" class="area-btn" data-area="中部">中部</button>
+          <button type="button" class="area-btn" data-area="関西">関西</button>
+          <button type="button" class="area-btn" data-area="中国・四国">中国・四国</button>
+          <button type="button" class="area-btn" data-area="九州・沖縄">九州・沖縄</button>
+        </div>
+      </div>
+
+      <div class="filter-group" id="purpose-filter-group">
+        <span class="filter-label">目的で絞る（複数選択可）</span>
+        <div class="purpose-checks">
+          <label class="purpose-check-label">
+            <input type="checkbox" id="filter-buy">
+            <span>商品を購入したい</span>
+          </label>
+          <label class="purpose-check-label">
+            <input type="checkbox" id="filter-peel">
+            <span>ブルーピールを受けたい</span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <p class="salon-count-bar" id="salon-count-bar">サロン情報を読み込み中...</p>
+    <div class="salon-grid" id="salon-grid"></div>
+  </main>
+
+  <script src="js/products.js"></script>
+  <script>
+    let allSalons = [];
+    let selectedArea = "ALL";
+
+    function renderSalons() {
+      const needBuy = document.getElementById("filter-buy").checked;
+      const needPeel = document.getElementById("filter-peel").checked;
+
+      const filtered = allSalons.filter(s => {
+        if (selectedArea !== "ALL" && s.area !== selectedArea) return false;
+        if (needBuy && !s.buy_ok) return false;
+        if (needPeel && !s.peel_ok) return false;
+        return true;
+      });
+
+      document.getElementById("salon-count-bar").textContent = `該当サロン：${filtered.length}件`;
+
+      const grid = document.getElementById("salon-grid");
+      if (filtered.length === 0) {
+        grid.innerHTML = `<p style="grid-column:1/-1;text-align:center;padding:40px;color:#666;">条件に一致する取扱サロンが見つかりませんでした。</p>`;
+        return;
+      }
+
+      grid.innerHTML = filtered.map(s => {
+        const logoHTML = s.logo
+          ? `<img src="${s.logo}" alt="${s.name}" class="salon-logo">`
+          : `<div class="salon-logo">ACFIT</div>`;
+
+        const buyBadge = s.buy_ok
+          ? `<div class="service-badge is-on">✓ 商品購入</div>`
+          : `<div class="service-badge is-off">− 商品購入</div>`;
+
+        const peelBadge = s.peel_ok
+          ? `<div class="service-badge is-on">✓ ブルーピール施術</div>`
+          : `<div class="service-badge is-off">− ブルーピール施術</div>`;
+
+        const instaBtn = s.instagram
+          ? `<a href="${s.instagram}" target="_blank" rel="noopener" class="salon-link-btn btn-insta">Instagram</a>`
+          : `<span class="salon-link-btn btn-disabled">Instagram</span>`;
+
+        const reserveBtn = s.reserve_url
+          ? `<a href="${s.reserve_url}" target="_blank" rel="noopener" class="salon-link-btn btn-reserve">サロン予約ページ</a>`
+          : `<span class="salon-link-btn btn-disabled">予約ページ準備中</span>`;
+
+        return `
+          <article class="salon-card">
+            <div>
+              <div class="salon-card-head">
+                ${logoHTML}
+                <div>
+                  <span class="salon-area-tag">${s.area || "エリア未設定"}</span>
+                  <h2 class="salon-name">${s.name}</h2>
+                </div>
+              </div>
+
+              <div class="salon-badges">
+                ${buyBadge}
+                ${peelBadge}
+              </div>
+
+              <div class="salon-details">
+                <p><strong>住所：</strong>${s.address || "—"}</p>
+                <p><strong>TEL：</strong>${s.tel ? `<a href="tel:${s.tel}" style="color:inherit;">${s.tel}</a>` : "—"}</p>
+              </div>
+            </div>
+
+            <div class="salon-links">
+              ${instaBtn}
+              ${reserveBtn}
+            </div>
+          </article>
+        `;
+      }).join("");
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      // エリアボタン切替
+      document.querySelectorAll(".area-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".area-btn").forEach(b => b.classList.remove("is-active"));
+          btn.classList.add("is-active");
+          selectedArea = btn.dataset.area;
+          renderSalons();
+        });
+      });
+
+      // 目的チェックボックス切替
+      document.getElementById("filter-buy").addEventListener("change", renderSalons);
+      document.getElementById("filter-peel").addEventListener("change", renderSalons);
+
+      // URLパラメータ ?mode=purpose などで開かれた場合に該当フィルターへスクロール
+      const mode = new URLSearchParams(window.location.search).get("mode");
+      if (mode === "purpose") {
+        document.getElementById("purpose-filter-group").scrollIntoView({ behavior: "smooth" });
+      }
+
+      // すでにデータ取得済みなら即描画、まだならイベント待機
+      if (window.ACFIT_SALONS_DATA && window.ACFIT_SALONS_DATA.length > 0) {
+        allSalons = window.ACFIT_SALONS_DATA;
+        renderSalons();
+      }
+    });
+
+    window.addEventListener("acfit:salonsLoaded", (e) => {
+      allSalons = e.detail || [];
+      renderSalons();
+    });
+  </script>
+</body>
+</html>

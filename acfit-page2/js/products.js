@@ -45,24 +45,24 @@ const PRODUCTS_DATA = {
   <section class="vsang-lp-sec vsang-lp-sec--blue">
     <div class="vsang-lp-inner">
       <div class="vsang-lp-heading">
-        <h3 class="vsang-lp-heading-ja">丁寧なクレンジングから始まる、すこやかな素肌習慣</h3>
+        <h3 class="vsang-lp-heading-ja">丁寧なクレンジングから始まる、<br>すこやかな素肌習慣</h3>
         <p class="vsang-lp-heading-desc">日々ご愛用いただいているお客様から寄せられた、使い心地の声をご紹介します。</p>
       </div>
 
       <div class="vsang-lp-grid">
         <div class="vsang-lp-voice-item">
           <div class="vsang-lp-placeholder vsang-lp-placeholder--land">
-            <span>イメージ画像 01（推奨：500 × 320px）</span>
+               <img src="images/lp/1-koe-1.jpg">
           </div>
           <h4 class="vsang-lp-voice-title">「クレンジングだけなのに、洗い上がりがしっとり」</h4>
           <p class="vsang-lp-voice-text">
-            洗顔後のつっぱり感が気になりにくくて毎日使いやすいです。みずみずしくなめらかな洗い上がりで、次のスキンケアにも心地よく進めます。
+            洗顔後のつっぱり感が気になりにくくて毎日使いやすいです！みずみずしくなめらかな洗い上がりで、次のスキンケアにも心地よく進めます。
           </p>
         </div>
 
         <div class="vsang-lp-voice-item">
           <div class="vsang-lp-placeholder vsang-lp-placeholder--land">
-            <span>イメージ画像 02（推奨：500 × 320px）</span>
+            <img src="images/lp/1-koe-2.jpg">
           </div>
           <h4 class="vsang-lp-voice-title">「厳選された成分設計で、毎日の洗顔が楽しみに」</h4>
           <p class="vsang-lp-voice-text">
@@ -72,7 +72,7 @@ const PRODUCTS_DATA = {
 
         <div class="vsang-lp-voice-item">
           <div class="vsang-lp-placeholder vsang-lp-placeholder--land">
-            <span>イメージ画像 03（推奨：500 × 320px）</span>
+            <img src="images/lp/1-koe-3.jpg">
           </div>
           <h4 class="vsang-lp-voice-title">「洗い上がりのつっぱり感が少なく、乾燥しやすい肌にも」</h4>
           <p class="vsang-lp-voice-text">
@@ -82,7 +82,7 @@ const PRODUCTS_DATA = {
 
         <div class="vsang-lp-voice-item">
           <div class="vsang-lp-placeholder vsang-lp-placeholder--land">
-            <span>イメージ画像 04（推奨：500 × 320px）</span>
+            <img src="images/lp/1-koe-4.jpg">
           </div>
           <h4 class="vsang-lp-voice-title">「手早く泡立ち、朝晩の洗顔にぴったり」</h4>
           <p class="vsang-lp-voice-text">
@@ -99,7 +99,7 @@ const PRODUCTS_DATA = {
   <section class="vsang-lp-sec">
     <div class="vsang-lp-inner">
       <div class="vsang-lp-heading">
-        <h3 class="vsang-lp-heading-ja">すっきり落としながら、うるおいを守る4つの設計</h3>
+        <h3 class="vsang-lp-heading-ja">すっきり落としながら、<br>うるおいを守る4つの設計</h3>
       </div>
 
       <div class="vsang-lp-grid">
@@ -141,10 +141,10 @@ const PRODUCTS_DATA = {
 
       <div class="vsang-lp-grid vsang-lp-split">
         <div class="vsang-lp-placeholder vsang-lp-placeholder--sq">
-          <span>成分イメージ画像 01（推奨：500 × 420px）</span>
+          <img src="images/lp/1-sei-1.jpg">
         </div>
         <div class="vsang-lp-split-body">
-          <h4 class="vsang-lp-split-title">洗うたび、水分を抱え込むようなしっとり感へ</h4>
+          <h4 class="vsang-lp-split-title">洗うたび、水分を抱え込むような<br>しっとり感へ</h4>
           <p class="vsang-lp-split-text">
             優れた保水力をもつ保湿成分「グリセリン」と、キノコや穀物などから得られる自然由来の「β-グルカン」、さらに肌荒れを防いでうるおいを保つ「パンテノール（デクスパンテノール）」をバランスよく配合しました。
           </p>
@@ -163,14 +163,12 @@ const PRODUCTS_DATA = {
   <section class="vsang-lp-sec">
     <div class="vsang-lp-inner">
       <div class="vsang-lp-heading">
-        <span class="vsang-lp-heading-en">MOISTURE LAYERING</span>
         <h3 class="vsang-lp-heading-ja">うるおいに、さらなるうるおいを重ねる<br>5種のヒアルロン酸<sup>※</sup></h3>
-        <div class="vsang-lp-heading-line"></div>
       </div>
 
       <div class="vsang-lp-grid vsang-lp-split">
         <div class="vsang-lp-split-body">
-          <h4 class="vsang-lp-split-title">角質層のすみずみまで、みずみずしく満たす</h4>
+          <h4 class="vsang-lp-split-title">角質層のすみずみまで、<br>みずみずしく満たす</h4>
           <p class="vsang-lp-split-text">
             分子サイズや特性の異なる5種類のヒアルロン酸を複合配合。洗顔中から洗い上がりまで肌表面にうるおいのヴェールをつくり、角質層まで水分を届けて乾燥によるカサつきを防ぎます。
           </p>
@@ -184,7 +182,7 @@ const PRODUCTS_DATA = {
           <p class="vsang-lp-note">※すべて保湿成分</p>
         </div>
         <div class="vsang-lp-placeholder vsang-lp-placeholder--sq">
-          <span>ヒアルロン酸イメージ画像（推奨：500 × 420px）</span>
+          <img src="images/lp/1-sei-2.jpg">
         </div>
       </div>
     </div>
@@ -194,17 +192,15 @@ const PRODUCTS_DATA = {
   <section class="vsang-lp-sec vsang-lp-sec--blue">
     <div class="vsang-lp-inner">
       <div class="vsang-lp-heading">
-        <span class="vsang-lp-heading-en">V-SANG SOLUTION 02 - 04</span>
-        <h3 class="vsang-lp-heading-ja">肌へのやさしさと、すこやかな肌環境を考えた成分設計</h3>
+        <h3 class="vsang-lp-heading-ja">肌へのやさしさと、<br>すこやかな肌環境を考えた成分設計</h3>
         <div class="vsang-lp-heading-line"></div>
       </div>
 
       <div class="vsang-lp-grid">
         <div class="vsang-lp-detail-item">
-          <span class="vsang-lp-detail-label">SOLUTION 02</span>
           <h4 class="vsang-lp-detail-title">5種の発酵エキス<sup>※1</sup> 配合</h4>
           <div class="vsang-lp-placeholder vsang-lp-placeholder--land">
-            <span>発酵エキスイメージ画像（推奨：500 × 280px）</span>
+            <img src="images/lp/1-sei-3.jpg">
           </div>
           <p class="vsang-lp-detail-text">
             乳酸桿菌発酵液、サッカロミセス培養液、ガラクトミセス培養液、ビフィズス菌培養溶解質、乳酸桿菌／オウゴン根発酵液を配合。乾燥などの外部環境から肌を守り、すこやかな素肌へと整えます。
@@ -212,10 +208,9 @@ const PRODUCTS_DATA = {
         </div>
 
         <div class="vsang-lp-detail-item">
-          <span class="vsang-lp-detail-label">SOLUTION 03</span>
           <h4 class="vsang-lp-detail-title">マイルドな洗浄成分2種<sup>※2</sup> ＋ クエン酸<sup>※3</sup></h4>
           <div class="vsang-lp-placeholder vsang-lp-placeholder--land">
-            <span>洗浄成分イメージ画像（推奨：500 × 280px）</span>
+            <img src="images/lp/1-sei-4.jpg">
           </div>
           <p class="vsang-lp-detail-text">
             アミノ酸系・植物由来の洗浄成分（ココイルメチルタウリンNa、ヤシ脂肪酸）にクエン酸を組み合わせ、肌のうるおいバランスを保ちながら、余分な皮脂や汚れをやさしく洗い流します。
@@ -227,11 +222,10 @@ const PRODUCTS_DATA = {
 
       <div class="vsang-lp-grid vsang-lp-split">
         <div class="vsang-lp-placeholder vsang-lp-placeholder--sq">
-          <span>9種の植物由来エキス画像（推奨：500 × 380px）</span>
+          <img src="images/lp/1-sei-5.jpg">
         </div>
         <div class="vsang-lp-split-body">
-          <span class="vsang-lp-detail-label">SOLUTION 04</span>
-          <h4 class="vsang-lp-split-title">自然の恵みを取り入れた9種の植物由来エキス<sup>※1</sup></h4>
+          <h4 class="vsang-lp-split-title">自然の恵みを取り入れた<br>9種の植物由来エキス<sup>※1</sup></h4>
           <p class="vsang-lp-split-text">
             アロエベラ葉エキス、プロポリスエキス、ツボクサエキス、チャ葉エキス、オウレン根エキス、ザクロ果実エキス、イチジク果実エキス、ビート根エキス、ワサビノキ種子エキスを厳選配合。肌を穏やかに整え、キメの整ったなめらかな肌へ導きます。
           </p>
@@ -245,8 +239,7 @@ const PRODUCTS_DATA = {
   <section class="vsang-lp-sec">
     <div class="vsang-lp-inner">
       <div class="vsang-lp-heading">
-        <span class="vsang-lp-heading-en">TEXTURE &amp; CLEANSING</span>
-        <h3 class="vsang-lp-heading-ja">みずみずしいジェルから、キメ細かな濃密泡へ</h3>
+        <h3 class="vsang-lp-heading-ja">みずみずしいジェルから、<br>キメ細かな濃密泡へ</h3>
         <div class="vsang-lp-heading-line"></div>
         <p class="vsang-lp-heading-desc">
           水分クリームのようにやわらかなジェルテクスチャーが、水に触れることでふんわりとした微細泡に変化。<br class="vsang-lp-pc-only">
@@ -257,7 +250,7 @@ const PRODUCTS_DATA = {
       <div class="vsang-lp-grid">
         <div class="vsang-lp-tex-item">
           <div class="vsang-lp-placeholder vsang-lp-placeholder--land">
-            <span>テクスチャー画像 01：ジェル（推奨：500 × 340px）</span>
+            <img src="images/lp/1-sei-6.jpg">
           </div>
           <h4 class="vsang-lp-tex-title">なめらかに伸び広がる水分ジェル</h4>
           <p class="vsang-lp-tex-text">肌あたりがやさしいジェルが毛穴まわりの汚れや皮脂にもスムーズになじみます。</p>
@@ -265,7 +258,7 @@ const PRODUCTS_DATA = {
 
         <div class="vsang-lp-tex-item">
           <div class="vsang-lp-placeholder vsang-lp-placeholder--land">
-            <span>テクスチャー画像 02：泡立ち（推奨：500 × 340px）</span>
+            <img src="images/lp/1-sei-7.jpg">
           </div>
           <h4 class="vsang-lp-tex-title">クッションのように包み込む微細バブル</h4>
           <p class="vsang-lp-tex-text">きめ細かな泡が肌をやさしく洗い上げ、すすいだ後もしっとりとした心地よさが続きます。</p>
@@ -278,7 +271,6 @@ const PRODUCTS_DATA = {
   <section class="vsang-lp-sec vsang-lp-sec--blue">
     <div class="vsang-lp-inner">
       <div class="vsang-lp-heading">
-        <span class="vsang-lp-heading-en">HOW TO USE</span>
         <h3 class="vsang-lp-heading-ja">ご使用方法</h3>
         <div class="vsang-lp-heading-line"></div>
       </div>
@@ -286,7 +278,7 @@ const PRODUCTS_DATA = {
       <div class="vsang-lp-steps">
         <div class="vsang-lp-step-row">
           <div class="vsang-lp-step-head">
-            <span class="vsang-lp-step-num">STEP 01</span>
+            <span class="vsang-lp-step-num">STEP 1</span>
             <h4 class="vsang-lp-step-title">適量を手にとり、泡立てる</h4>
           </div>
           <p class="vsang-lp-step-text">清潔な手のひらに適量（2〜3プッシュ目安）をとり、少量の水またはぬるま湯を加えてよく泡立てます。</p>
@@ -294,7 +286,7 @@ const PRODUCTS_DATA = {
 
         <div class="vsang-lp-step-row">
           <div class="vsang-lp-step-head">
-            <span class="vsang-lp-step-num">STEP 02</span>
+            <span class="vsang-lp-step-num">STEP 2</span>
             <h4 class="vsang-lp-step-title">泡で包み込むようにやさしく洗う</h4>
           </div>
           <p class="vsang-lp-step-text">顔全体を泡で包み込み、指の腹で円を描くようにやさしくマッサージしながら汚れとなじませます。</p>
@@ -302,7 +294,7 @@ const PRODUCTS_DATA = {
 
         <div class="vsang-lp-step-row">
           <div class="vsang-lp-step-head">
-            <span class="vsang-lp-step-num">STEP 03</span>
+            <span class="vsang-lp-step-num">STEP 3</span>
             <h4 class="vsang-lp-step-title">ぬるま湯で丁寧にすすぐ</h4>
           </div>
           <p class="vsang-lp-step-text">水またはぬるま湯で洗い残しがないよう丁寧にすすぎ、清潔なタオルで押さえるように水分を拭き取ります。</p>
@@ -315,7 +307,6 @@ const PRODUCTS_DATA = {
   <section class="vsang-lp-sec">
     <div class="vsang-lp-inner">
       <div class="vsang-lp-heading">
-        <span class="vsang-lp-heading-en">PRODUCT INFORMATION</span>
         <h3 class="vsang-lp-heading-ja">製品情報</h3>
         <div class="vsang-lp-heading-line"></div>
       </div>
@@ -347,7 +338,7 @@ const PRODUCTS_DATA = {
           <tr>
             <th>ご使用上の注意</th>
             <td>
-              1. お肌に異常が生じていないかよく注意して使用してください。化粧品がお肌に合わないとき即ち次のような場合には、使用を中止してください。そのまま化粧品類の使用を続けますと、症状を悪化させることがありますので、皮膚科専門医等にご相談されることをおすすめします。<br>
+              1. お肌に異常が生じていないかよく注意して使用してください。次のような場合には、ただちに使用を中止してください。そのまま化粧品類の使用を続けますと、症状を悪化させることがあります。皮膚科専門医等にご相談されることをおすすめします。<br>
               (1) 使用中、赤味、はれ、かゆみ、刺激、色抜け（白斑等）や黒ずみ等の異常があらわれた場合<br>
               (2) 使用したお肌に、直射日光があたって上記のような異常があらわれた場合<br>
               2. 傷やはれもの、しっしん等、異常のある部位にはお使いにならないでください。<br>
@@ -364,14 +355,13 @@ const PRODUCTS_DATA = {
   <section class="vsang-lp-sec vsang-lp-sec--blue">
     <div class="vsang-lp-inner">
       <div class="vsang-lp-heading">
-        <span class="vsang-lp-heading-en">ONLINE STORE</span>
         <h3 class="vsang-lp-heading-ja">ご購入はこちら</h3>
         <div class="vsang-lp-heading-line"></div>
       </div>
 
       <div class="vsang-lp-grid vsang-lp-buy-box">
         <div class="vsang-lp-placeholder vsang-lp-placeholder--sq">
-          <span>商品パッケージ画像（推奨：500 × 500px）</span>
+          <img src="images/lp/1-pro.jpg">
         </div>
 
         <div class="vsang-lp-buy-info">
@@ -389,13 +379,12 @@ const PRODUCTS_DATA = {
           </p>
 
           <div class="vsang-lp-buy-select-wrap">
-            <label class="vsang-lp-buy-label">内容量を選択</label>
-            <select class="vsang-lp-buy-select">
-              <option value="200ml">200mL — ¥6,600（税込）</option>
-            </select>
+            <div class="vsang-lp-buy-p">
+              <p>200mL：¥6,600（税込）</p>
+            </div>
           </div>
 
-          <button type="button" class="vsang-lp-buy-btn" data-product-id="beta-g-cleansing">
+          <button type="button" class="vsang-lp-buy-btn" data-product-id="item_01" onclick="addToCart('item_01')">
             カートに入れる
           </button>
         </div>
@@ -435,26 +424,18 @@ const PRODUCTS_DATA = {
       "images/toner/4.jpg"
     ],
     specs: [
-      { label: "内容量", value: "200ml（約2ヶ月分）" },
-      { label: "主要成分", value: "ナイアシンアミド、シア脂、スクワラン、トコフェロール" },
-      { label: "原産国", value: "日本" }
+      // { label: "内容量", value: "200ml（約2ヶ月分）" },
+      // { label: "主要成分", value: "ナイアシンアミド、シア脂、スクワラン、トコフェロール" },
+      // { label: "原産国", value: "日本" }
     ],
     lpHtml: `
       <div class="vsang-lp-wrap">
 
   <!-- FV（ファーストビュー：テキスト＋画像配置枠） -->
   <section class="vsang-lp-fv">
-    <div class="vsang-lp-inner">
       <div class="vsang-lp-fv-head">
-        <p class="vsang-lp-fv-brand">ACFIT V-SANG</p>
-        <p class="vsang-lp-fv-lead">素肌の印象を変える、最初のうるおい習慣</p>
-        <h2 class="vsang-lp-fv-title">V-SANG BETA-G<br class="vsang-lp-sp-only"> SECURE TONER</h2>
-        <p class="vsang-lp-fv-sub">洗顔後の無防備な肌に、みずみずしい水分ヴェールを届ける高保湿トナー。</p>
+       <img src="images/lp/2-fv.jpg">
       </div>
-      <div class="vsang-lp-placeholder vsang-lp-placeholder--fv">
-        <span>FV メインビジュアル配置エリア（推奨：1040 × 560px）</span>
-      </div>
-    </div>
   </section>
 
   <!-- VOICE & IMPRESSION（お声・使用感） -->
@@ -462,7 +443,7 @@ const PRODUCTS_DATA = {
     <div class="vsang-lp-inner">
       <div class="vsang-lp-heading">
         <span class="vsang-lp-heading-en">VOICE &amp; IMPRESSION</span>
-        <h3 class="vsang-lp-heading-ja">毎日のスキンケアが心地よくなる、みずみずしい使用感</h3>
+        <h3 class="vsang-lp-heading-ja">毎日のスキンケアが心地よくなる、<br>みずみずしい使用感</h3>
         <div class="vsang-lp-heading-line"></div>
         <p class="vsang-lp-heading-desc">日々ご愛用いただいているお客様から寄せられた、使い心地の声をご紹介します。</p>
       </div>
@@ -470,7 +451,7 @@ const PRODUCTS_DATA = {
       <div class="vsang-lp-grid">
         <div class="vsang-lp-voice-item">
           <div class="vsang-lp-placeholder vsang-lp-placeholder--land">
-            <span>イメージ画像 01（推奨：500 × 320px）</span>
+            <img src="images/lp/2-koe-1.jpg">
           </div>
           <h4 class="vsang-lp-voice-title">「乾燥が気になる肌にも、すっとなじんでしっとり」</h4>
           <p class="vsang-lp-voice-text">
@@ -480,31 +461,31 @@ const PRODUCTS_DATA = {
 
         <div class="vsang-lp-voice-item">
           <div class="vsang-lp-placeholder vsang-lp-placeholder--land">
-            <span>イメージ画像 02（推奨：500 × 320px）</span>
+            <img src="images/lp/2-koe-2.jpg">
           </div>
-          <h4 class="vsang-lp-voice-title">「ビサン トナーを使うようになって、ツヤ感がアップ」</h4>
+          <h4 class="vsang-lp-voice-title">「ビサントナーを使うようになって、ツヤ感がアップ」</h4>
           <p class="vsang-lp-voice-text">
-            洗顔後すぐになじませると、肌表面がなめらかに整って自然なツヤが出ます。メイク前の保湿ケアに使うと化粧ノリも心地よく感じられます。
+            洗顔後すぐになじませると、肌表面がなめらかに整って自然なツヤが出る気がします。メイク前の保湿ケアに使うと化粧ノリもいい感じです。
           </p>
         </div>
 
         <div class="vsang-lp-voice-item">
           <div class="vsang-lp-placeholder vsang-lp-placeholder--land">
-            <span>イメージ画像 03（推奨：500 × 320px）</span>
+            <img src="images/lp/2-koe-3.jpg">
           </div>
           <h4 class="vsang-lp-voice-title">「朝までしっとり感が続き、乾燥によるカサつき対策に」</h4>
           <p class="vsang-lp-voice-text">
-            夜のスキンケアでたっぷりなじませておくと、翌朝までみずみずしい肌触りが続きます。大容量サイズもあるので惜しみなく使えるのが嬉しいです。
+            夜のスキンケアでたっぷりなじませておくと、翌朝までみずみずしい肌触りが続いてます。もう手放せません。
           </p>
         </div>
 
         <div class="vsang-lp-voice-item">
           <div class="vsang-lp-placeholder vsang-lp-placeholder--land">
-            <span>イメージ画像 04（推奨：500 × 320px）</span>
+            <img src="images/lp/2-koe-4.jpg">
           </div>
           <h4 class="vsang-lp-voice-title">「顔だけでなく、乾燥しやすいボディの保湿にも大活躍」</h4>
           <p class="vsang-lp-voice-text">
-            さらっとみずみずしいテクスチャーなので、顔はもちろん首元やデコルテ、乾燥が気になる腕や脚の水分補給にも心地よく使えます。
+            さらっとみずみずしいテクスチャーなので、顔はもちろん首元やデコルテ、乾燥が気になる腕や脚の水分補給にも使えます。
           </p>
         </div>
       </div>
@@ -513,55 +494,18 @@ const PRODUCTS_DATA = {
     </div>
   </section>
 
-  <!-- TWO CHOICES（2サイズ展開） -->
-  <section class="vsang-lp-sec">
-    <div class="vsang-lp-inner">
-      <div class="vsang-lp-heading">
-        <span class="vsang-lp-heading-en">LINEUP &amp; SIZE</span>
-        <h3 class="vsang-lp-heading-ja">ライフスタイルに合わせて選べる2つのサイズ</h3>
-        <div class="vsang-lp-heading-line"></div>
-        <p class="vsang-lp-heading-desc">持ち運びや毎日のケアに使いやすい200mLと、たっぷり使える1000mLをご用意しました。</p>
-      </div>
-
-      <div class="vsang-lp-grid">
-        <div class="vsang-lp-detail-item">
-          <span class="vsang-lp-detail-label">REGULAR SIZE / 200mL</span>
-          <h4 class="vsang-lp-detail-title">毎日使いやすいスタンダードサイズ（200mL）</h4>
-          <div class="vsang-lp-placeholder vsang-lp-placeholder--sq">
-            <span>200mL ボトル画像（推奨：500 × 420px）</span>
-          </div>
-          <p class="vsang-lp-detail-text">
-            洗面台やドレッサーにすっきりと置ける200mLサイズ。初めてお使いいただく方や、旅行・ジムなどへの持ち運びにも便利です。
-          </p>
-        </div>
-
-        <div class="vsang-lp-detail-item">
-          <span class="vsang-lp-detail-label">LARGE SIZE / 1000mL</span>
-          <h4 class="vsang-lp-detail-title">惜しみなくたっぷり使える大容量サイズ（1000mL）</h4>
-          <div class="vsang-lp-placeholder vsang-lp-placeholder--sq">
-            <span>1000mL ボトル画像（推奨：500 × 420px）</span>
-          </div>
-          <p class="vsang-lp-detail-text">
-            朝晩の重ねづけやコットンパック、全身の水分ケアまで気兼ねなく使える1000mLの大容量ボトル。サロンケアやご家族でのシェアにもおすすめです。
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- 5 SOLUTIONS（5つのアプローチ） -->
-  <section class="vsang-lp-sec vsang-lp-sec--blue">
-    <div class="vsang-lp-inner">
+  <section class="vsang-lp-sec">
+   <div class="vsang-lp-inner">
       <div class="vsang-lp-heading">
-        <span class="vsang-lp-heading-en">5 SOLUTIONS</span>
-        <h3 class="vsang-lp-heading-ja">うるおい・ツヤ・ハリを多角的に支える5つの設計</h3>
+        <h3 class="vsang-lp-heading-ja">うるおい・ツヤ・ハリを<br>多角的に支える5つの設計</h3>
         <div class="vsang-lp-heading-line"></div>
       </div>
 
       <div class="vsang-lp-grid">
         <div class="vsang-lp-sol-item">
           <span class="vsang-lp-sol-num">SOLUTION 01</span>
-          <h4 class="vsang-lp-sol-title">グリセリン × β-グルカン ＋ 保湿成分3種<sup>※1</sup></h4>
+          <h4 class="vsang-lp-sol-title">グリセリン×β-グルカン＋保湿成分3種<sup>※1</sup></h4>
           <p class="vsang-lp-sol-text">角質層のすみずみまで水分を届け、しっとりとしたうるおいヴェールで包み込みます。</p>
         </div>
 
@@ -598,14 +542,13 @@ const PRODUCTS_DATA = {
   <section class="vsang-lp-sec">
     <div class="vsang-lp-inner">
       <div class="vsang-lp-heading">
-        <span class="vsang-lp-heading-en">V-SANG SOLUTION 01</span>
         <h3 class="vsang-lp-heading-ja">角質層のすみずみまでうるおいで満たす<br>グリセリン × β-グルカン<sup>※</sup></h3>
         <div class="vsang-lp-heading-line"></div>
       </div>
 
       <div class="vsang-lp-grid vsang-lp-split">
         <div class="vsang-lp-placeholder vsang-lp-placeholder--sq">
-          <span>水分ヴェールイメージ画像（推奨：500 × 420px）</span>
+          <img src="images/lp/2-sei-1.jpg">
         </div>
         <div class="vsang-lp-split-body">
           <h4 class="vsang-lp-split-title">みずみずしさを抱え込み、乾燥から肌を守る</h4>
@@ -624,7 +567,6 @@ const PRODUCTS_DATA = {
 
       <div class="vsang-lp-grid vsang-lp-split">
         <div class="vsang-lp-split-body">
-          <span class="vsang-lp-detail-label">MOISTURE LAYERING</span>
           <h4 class="vsang-lp-split-title">うるおいに、さらなるうるおいを重ねる3種の保湿成分<sup>※</sup></h4>
           <p class="vsang-lp-split-text">
             水分を抱え込む「ヒアルロン酸Na」、乾燥環境でもうるおいを保つ「トレハロース」、肌にハリと弾力感を与える「加水分解コラーゲン」を組み合わせ、しっとり感が続くみずみずしい肌へ導きます。
@@ -637,7 +579,7 @@ const PRODUCTS_DATA = {
           <p class="vsang-lp-note">※すべて保湿成分</p>
         </div>
         <div class="vsang-lp-placeholder vsang-lp-placeholder--sq">
-          <span>3種の保湿成分イメージ画像（推奨：500 × 420px）</span>
+          <img src="images/lp/2-sei-2.jpg">
         </div>
       </div>
     </div>
@@ -648,7 +590,7 @@ const PRODUCTS_DATA = {
     <div class="vsang-lp-inner">
       <div class="vsang-lp-heading">
         <span class="vsang-lp-heading-en">V-SANG SOLUTION 02 &amp; 03</span>
-        <h3 class="vsang-lp-heading-ja">すこやかな肌環境と、ツヤ・ハリ感のための厳選成分</h3>
+        <h3 class="vsang-lp-heading-ja">すこやかな肌環境と、<br>ツヤ・ハリ感のための厳選成分</h3>
         <div class="vsang-lp-heading-line"></div>
       </div>
 
@@ -657,7 +599,7 @@ const PRODUCTS_DATA = {
           <span class="vsang-lp-detail-label">SOLUTION 02</span>
           <h4 class="vsang-lp-detail-title">5種の発酵エキス<sup>※1</sup> 配合</h4>
           <div class="vsang-lp-placeholder vsang-lp-placeholder--land">
-            <span>発酵エキスイメージ画像（推奨：500 × 280px）</span>
+            <img src="images/lp/2-sei-3.jpg">
           </div>
           <p class="vsang-lp-detail-text">
             乳酸桿菌発酵液、サッカロミセス培養液、ガラクトミセス培養液、ビフィズス菌培養溶解質、乳酸桿菌／オウゴン根発酵液を配合。肌のうるおいバランスを整え、乾燥による肌荒れを防ぎます。
@@ -668,7 +610,7 @@ const PRODUCTS_DATA = {
           <span class="vsang-lp-detail-label">SOLUTION 03</span>
           <h4 class="vsang-lp-detail-title">ナイアシンアミド × アデノシン<sup>※1</sup> 配合</h4>
           <div class="vsang-lp-placeholder vsang-lp-placeholder--land">
-            <span>ナイアシンアミド・アデノシン画像（推奨：500 × 280px）</span>
+            <img src="images/lp/2-sei-4.jpg">
           </div>
           <p class="vsang-lp-detail-text">
             人気の整肌成分「ナイアシンアミド」と「アデノシン」をダブルで配合。うるおいを与えることで乾燥によるくすみを防ぎ、ピンとしたハリとツヤのある素肌へ導きます。
@@ -685,13 +627,13 @@ const PRODUCTS_DATA = {
     <div class="vsang-lp-inner">
       <div class="vsang-lp-heading">
         <span class="vsang-lp-heading-en">V-SANG SOLUTION 04 &amp; 05</span>
-        <h3 class="vsang-lp-heading-ja">自然由来の植物エキスと、なめらかな肌表面へ整える角質ケア</h3>
+        <h3 class="vsang-lp-heading-ja">自然由来の植物エキスと、<br>なめらかな肌表面へ整える角質ケア</h3>
         <div class="vsang-lp-heading-line"></div>
       </div>
 
       <div class="vsang-lp-grid vsang-lp-split">
         <div class="vsang-lp-placeholder vsang-lp-placeholder--sq">
-          <span>10種の植物由来エキス画像（推奨：500 × 380px）</span>
+          <img src="images/lp/2-sei-5.jpg">
         </div>
         <div class="vsang-lp-split-body">
           <span class="vsang-lp-detail-label">SOLUTION 04</span>
@@ -714,7 +656,7 @@ const PRODUCTS_DATA = {
           <p class="vsang-lp-note">※1 整肌成分 ※2 整肌・pH調整成分</p>
         </div>
         <div class="vsang-lp-placeholder vsang-lp-placeholder--sq">
-          <span>角質ケアメカニズムイメージ画像（推奨：500 × 380px）</span>
+          <img src="images/lp/2-sei-6.jpg">
         </div>
       </div>
     </div>
@@ -725,10 +667,10 @@ const PRODUCTS_DATA = {
     <div class="vsang-lp-inner">
       <div class="vsang-lp-heading">
         <span class="vsang-lp-heading-en">TEXTURE</span>
-        <h3 class="vsang-lp-heading-ja">すっと吸い込まれるような、みずみずしいウォーターテクスチャー</h3>
+        <h3 class="vsang-lp-heading-ja">すっと吸い込まれるような、<br>みずみずしいウォーターテクスチャー</h3>
         <div class="vsang-lp-heading-line"></div>
         <p class="vsang-lp-heading-desc">
-          ベタつきを抑えた軽やかな使い心地でありながら、肌になじませると角質層までしっとりとうるおうウォータータイプ。<br class="vsang-lp-pc-only">
+          ベタつきを抑えた軽やかな使い心地でありながら、<br>肌になじませると角質層までしっとりとうるおうウォータータイプ。<br class="vsang-lp-pc-only">
           乾燥した肌にみずみずしいツヤとハリ感を与え、心地よいスキンケアタイムを演出します。
         </p>
       </div>
@@ -736,7 +678,7 @@ const PRODUCTS_DATA = {
       <div class="vsang-lp-grid">
         <div class="vsang-lp-tex-item">
           <div class="vsang-lp-placeholder vsang-lp-placeholder--land">
-            <span>テクスチャー画像 01：水感（推奨：500 × 340px）</span>
+            <img src="images/lp/2-sei-7.jpg">
           </div>
           <h4 class="vsang-lp-tex-title">角質層まで素早くなじむ浸透感<sup>※</sup></h4>
           <p class="vsang-lp-tex-text">肌表面に残りにくく、重ねづけしても重たくならないフレッシュな使用感です。</p>
@@ -744,7 +686,7 @@ const PRODUCTS_DATA = {
 
         <div class="vsang-lp-tex-item">
           <div class="vsang-lp-placeholder vsang-lp-placeholder--land">
-            <span>テクスチャー画像 02：ツヤ肌（推奨：500 × 340px）</span>
+            <img src="images/lp/2-sei-8.jpg">
           </div>
           <h4 class="vsang-lp-tex-title">内側からうるおうようなツヤ仕上げ</h4>
           <p class="vsang-lp-tex-text">うるおいを抱え込んだ、もっちりやわらかな素肌へと整えます。</p>
@@ -801,7 +743,7 @@ const PRODUCTS_DATA = {
           </tr>
           <tr>
             <th>内容量</th>
-            <td>200mL ／ 1000mL</td>
+            <td>200mL</td>
           </tr>
           <tr>
             <th>使用期限</th>
@@ -820,7 +762,7 @@ const PRODUCTS_DATA = {
           <tr>
             <th>ご使用上の注意</th>
             <td>
-              1. お肌に異常が生じていないかよく注意して使用してください。化粧品がお肌に合わないとき即ち次のような場合には、使用を中止してください。そのまま化粧品類の使用を続けますと、症状を悪化させることがありますので、皮膚科専門医等にご相談されることをおすすめします。<br>
+              1. お肌に異常が生じていないかよく注意して使用してください。次のような場合には、ただちに使用を中止してください。そのまま化粧品類の使用を続けますと、症状を悪化させることがあります。皮膚科専門医等にご相談されることをおすすめします。<br>
               (1) 使用中、赤味、はれ、かゆみ、刺激、色抜け（白斑等）や黒ずみ等の異常があらわれた場合<br>
               (2) 使用したお肌に、直射日光があたって上記のような異常があらわれた場合<br>
               2. 傷やはれもの、しっしん等、異常のある部位にはお使いにならないでください。<br>
@@ -844,7 +786,7 @@ const PRODUCTS_DATA = {
 
       <div class="vsang-lp-grid vsang-lp-buy-box">
         <div class="vsang-lp-placeholder vsang-lp-placeholder--sq">
-          <span>商品パッケージ画像（推奨：500 × 500px）</span>
+          <img src="images/lp/2-pro.jpg">
         </div>
 
         <div class="vsang-lp-buy-info">
@@ -853,23 +795,21 @@ const PRODUCTS_DATA = {
           <p class="vsang-lp-buy-en">V-SANG BETA-G SECURE TONER</p>
 
           <div class="vsang-lp-buy-price-row">
-            <span class="vsang-lp-buy-price">¥6,600〜</span>
-            <span class="vsang-lp-buy-tax">（税込） / 200mL・1000mL</span>
+            <span class="vsang-lp-buy-price">¥11,000</span>
+            <span class="vsang-lp-buy-tax">（税込） / 200mL</span>
           </div>
 
           <p class="vsang-lp-buy-desc">
             洗顔後の肌に素早くうるおいを届け、ツヤとハリのあるすこやかな素肌へ導く高保湿化粧水。
           </p>
 
-          <div class="vsang-lp-buy-select-wrap">
-            <label class="vsang-lp-buy-label">内容量を選択</label>
-            <select class="vsang-lp-buy-select">
-              <option value="200ml">200mL — ¥6,600（税込）</option>
-              <option value="1000ml">1000mL — ¥16,500（税込）</option>
-            </select>
+           <div class="vsang-lp-buy-select-wrap">
+            <div class="vsang-lp-buy-p">
+              <p>200mL：¥11,000（税込）</p>
+            </div>
           </div>
 
-          <button type="button" class="vsang-lp-buy-btn" data-product-id="beta-g-toner">
+          <button type="button" class="vsang-lp-buy-btn" data-product-id="item_02" onclick="addToCart('item_02')">
             カートに入れる
           </button>
         </div>
@@ -906,9 +846,9 @@ const PRODUCTS_DATA = {
       "images/skin/3.jpg"
       ],
     specs: [
-      { label: "内容量", value: "100ml（約2ヶ月分）" },
-      { label: "主要成分", value: "ナイアシンアミド、シア脂、スクワラン、トコフェロール" },
-      { label: "原産国", value: "日本" }
+      // { label: "内容量", value: "100ml（約2ヶ月分）" },
+      // { label: "主要成分", value: "ナイアシンアミド、シア脂、スクワラン、トコフェロール" },
+      // { label: "原産国", value: "日本" }
 
     ],
     lpHtml: `
@@ -916,17 +856,9 @@ const PRODUCTS_DATA = {
 
   <!-- FV（ファーストビュー：テキスト＋画像配置枠） -->
   <section class="vsang-lp-fv">
-    <div class="vsang-lp-inner">
       <div class="vsang-lp-fv-head">
-        <p class="vsang-lp-fv-brand">ACFIT V-SANG</p>
-        <p class="vsang-lp-fv-lead">みずみずしさが続く、すこやかな素肌の秘訣</p>
-        <h2 class="vsang-lp-fv-title">V-SANG BETA-G<br class="vsang-lp-sp-only"> INFUSING SKIN BOOSTER</h2>
-        <p class="vsang-lp-fv-sub">スキンケアの最初にうるおいの道筋をつくり、角質層まで水分を抱え込む導入ブースター。</p>
+       <img src="images/lp/3-fv.jpg">
       </div>
-      <div class="vsang-lp-placeholder vsang-lp-placeholder--fv">
-        <span>FV メインビジュアル配置エリア（推奨：1040 × 560px）</span>
-      </div>
-    </div>
   </section>
 
   <!-- VOICE & IMPRESSION（お声・使用感） -->
@@ -934,7 +866,7 @@ const PRODUCTS_DATA = {
     <div class="vsang-lp-inner">
       <div class="vsang-lp-heading">
         <span class="vsang-lp-heading-en">VOICE &amp; IMPRESSION</span>
-        <h3 class="vsang-lp-heading-ja">一度使うと手放せなくなる、みずみずしい導入ケア</h3>
+        <h3 class="vsang-lp-heading-ja">一度使うと手放せなくなる、<br>みずみずしい導入ケア</h3>
         <div class="vsang-lp-heading-line"></div>
         <p class="vsang-lp-heading-desc">日々ご愛用いただいているお客様から寄せられた、使い心地の声をご紹介します。</p>
       </div>
@@ -946,7 +878,7 @@ const PRODUCTS_DATA = {
           </div>
           <h4 class="vsang-lp-voice-title">「表面はさらっと軽やかなのに、角質層までしっとり」</h4>
           <p class="vsang-lp-voice-text">
-            重たさやベタつきが苦手なのですが、これは水のようにすっとなじんで2〜3回重ねづけすると肌がもっちりうるおう感じがして心地よいです。
+            重たさやベタつきが苦手なのですが、これは水のようにすっとなじんで2〜3回重ねづけすると肌がもっちりうるおう感じがして心地よくおすすめです。
           </p>
         </div>
 
@@ -1038,7 +970,7 @@ const PRODUCTS_DATA = {
           <span>水分補給イメージ画像（推奨：500 × 420px）</span>
         </div>
         <div class="vsang-lp-split-body">
-          <h4 class="vsang-lp-split-title">洗顔後すぐの肌に、すっとなじむうるおいベース</h4>
+          <h4 class="vsang-lp-split-title">洗顔後すぐの肌に、<br>すっとなじむうるおいベース</h4>
           <p class="vsang-lp-split-text">
             保水力に優れた「グリセリン」と、キノコや穀物などから得られる自然由来の保湿成分「β-グルカン」をバランスよく配合。乾きやすい洗顔後の肌をみずみずしく整え、次のスキンケアがなじみやすい状態へ導きます。
           </p>
@@ -1117,7 +1049,7 @@ const PRODUCTS_DATA = {
     <div class="vsang-lp-inner">
       <div class="vsang-lp-heading">
         <span class="vsang-lp-heading-en">V-SANG SOLUTION 03 &amp; 04</span>
-        <h3 class="vsang-lp-heading-ja">自然由来エキスと6種のペプチドが支える、ハリ・ツヤ設計</h3>
+        <h3 class="vsang-lp-heading-ja">自然由来エキスと6種のペプチドが支える、<br>ハリ・ツヤ設計</h3>
         <div class="vsang-lp-heading-line"></div>
       </div>
 
@@ -1165,7 +1097,7 @@ const PRODUCTS_DATA = {
     <div class="vsang-lp-inner">
       <div class="vsang-lp-heading">
         <span class="vsang-lp-heading-en">TEXTURE</span>
-        <h3 class="vsang-lp-heading-ja">ベタつきを抑えた、みずみずしい高保湿テクスチャー</h3>
+        <h3 class="vsang-lp-heading-ja">ベタつきを抑えた、<br>みずみずしい高保湿テクスチャー</h3>
         <div class="vsang-lp-heading-line"></div>
         <p class="vsang-lp-heading-desc">
           とろみとみずみずしさを両立した軽やかなエッセンスが、肌に触れた瞬間すっとなじんで角質層まで浸透<sup>※</sup>。<br class="vsang-lp-pc-only">
@@ -1200,7 +1132,7 @@ const PRODUCTS_DATA = {
     <div class="vsang-lp-inner">
       <div class="vsang-lp-heading">
         <span class="vsang-lp-heading-en">HOW TO USE</span>
-        <h3 class="vsang-lp-heading-ja">3通りの使い方で、コンディションに合わせたうるおいケア</h3>
+        <h3 class="vsang-lp-heading-ja">3通りの使い方で、<br>コンディションに合わせたうるおいケア</h3>
         <div class="vsang-lp-heading-line"></div>
       </div>
 
@@ -1249,7 +1181,7 @@ const PRODUCTS_DATA = {
           </tr>
           <tr>
             <th>内容量</th>
-            <td>150mL</td>
+            <td>100mL</td>
           </tr>
           <tr>
             <th>使用期限</th>
@@ -1268,7 +1200,7 @@ const PRODUCTS_DATA = {
           <tr>
             <th>ご使用上の注意</th>
             <td>
-              1. お肌に異常が生じていないかよく注意して使用してください。化粧品がお肌に合わないとき即ち次のような場合には、使用を中止してください。そのまま化粧品類の使用を続けますと、症状を悪化させることがありますので、皮膚科専門医等にご相談されることをおすすめします。<br>
+              1. お肌に異常が生じていないかよく注意して使用してください。次のような場合には、ただちに使用を中止してください。そのまま化粧品類の使用を続けますと、症状を悪化させることがあります。皮膚科専門医等にご相談されることをおすすめします。<br>
               (1) 使用中、赤味、はれ、かゆみ、刺激、色抜け（白斑等）や黒ずみ等の異常があらわれた場合<br>
               (2) 使用したお肌に、直射日光があたって上記のような異常があらわれた場合<br>
               2. 傷やはれもの、しっしん等、異常のある部位にはお使いにならないでください。<br>
@@ -1301,8 +1233,8 @@ const PRODUCTS_DATA = {
           <p class="vsang-lp-buy-en">V-SANG BETA-G INFUSING SKIN BOOSTER</p>
 
           <div class="vsang-lp-buy-price-row">
-            <span class="vsang-lp-buy-price">¥7,700</span>
-            <span class="vsang-lp-buy-tax">（税込） / 150mL</span>
+            <span class="vsang-lp-buy-price">¥9,900</span>
+            <span class="vsang-lp-buy-tax">（税込） / 100mL</span>
           </div>
 
           <p class="vsang-lp-buy-desc">
@@ -1310,13 +1242,12 @@ const PRODUCTS_DATA = {
           </p>
 
           <div class="vsang-lp-buy-select-wrap">
-            <label class="vsang-lp-buy-label">内容量を選択</label>
-            <select class="vsang-lp-buy-select">
-              <option value="150ml">150mL — ¥7,700（税込）</option>
-            </select>
-          </div>
+              <div class="vsang-lp-buy-p">
+                <p>150mL：¥9,900（税込）</p>
+              </div>
+            </div>
 
-          <button type="button" class="vsang-lp-buy-btn" data-product-id="beta-g-skin-booster">
+          <button type="button" class="vsang-lp-buy-btn" data-product-id="item_03" onclick="addToCart('item_03')">
             カートに入れる
           </button>
         </div>
@@ -1355,26 +1286,18 @@ const PRODUCTS_DATA = {
       "images/Ampoule/3.png"
     ],
     specs: [
-      { label: "内容量", value: "30ml（約2ヶ月分）" },
-      { label: "主要成分", value: "ナイアシンアミド、シア脂、スクワラン、トコフェロール" },
-      { label: "原産国", value: "日本" }
+      // { label: "内容量", value: "30ml（約2ヶ月分）" },
+      // { label: "主要成分", value: "ナイアシンアミド、シア脂、スクワラン、トコフェロール" },
+      // { label: "原産国", value: "日本" }
     ],
     lpHtml: `
      <div class="vsang-lp-wrap">
 
   <!-- FV（ファーストビュー：テキスト＋画像配置枠） -->
   <section class="vsang-lp-fv">
-    <div class="vsang-lp-inner">
       <div class="vsang-lp-fv-head">
-        <p class="vsang-lp-fv-brand">ACFIT V-SANG</p>
-        <p class="vsang-lp-fv-lead">ゆらぎやすい肌コンディションをすこやかに整える、新基準</p>
-        <h2 class="vsang-lp-fv-title">V-SANG BETA-G<br class="vsang-lp-sp-only"> LACTO CARE AMPOULE</h2>
-        <p class="vsang-lp-fv-sub">繊細に設計された一滴のラクトケア習慣で、ハリとうるおいに満ちたツヤ肌へ。</p>
+       <img src="images/lp/4-fv.jpg">
       </div>
-      <div class="vsang-lp-placeholder vsang-lp-placeholder--fv">
-        <span>FV メインビジュアル配置エリア（推奨：1040 × 560px）</span>
-      </div>
-    </div>
   </section>
 
   <!-- VOICE & IMPRESSION（お声・使用感） -->
@@ -1769,13 +1692,12 @@ const PRODUCTS_DATA = {
           </p>
 
           <div class="vsang-lp-buy-select-wrap">
-            <label class="vsang-lp-buy-label">内容量を選択</label>
-            <select class="vsang-lp-buy-select">
-              <option value="30ml">30mL — ¥9,900（税込）</option>
-            </select>
-          </div>
+              <div class="vsang-lp-buy-p">
+                <p>30mL：¥9,900（税込）</p>
+              </div>
+            </div>
 
-          <button type="button" class="vsang-lp-buy-btn" data-product-id="beta-g-lacto-care-ampoule">
+          <button type="button" class="vsang-lp-buy-btn" data-product-id="item_04" onclick="addToCart('item_04')">
             カートに入れる
           </button>
         </div>
@@ -1815,27 +1737,18 @@ const PRODUCTS_DATA = {
       "images/oil/4.jpg"
     ],
     specs: [
-      { label: "内容量", value: "15ml（約2ヶ月分）" },
-      { label: "主要成分", value: "ナイアシンアミド、シア脂、スクワラン、トコフェロール" },
-      { label: "原産国", value: "日本" }
+      // { label: "内容量", value: "15ml（約2ヶ月分）" },
+      // { label: "主要成分", value: "ナイアシンアミド、シア脂、スクワラン、トコフェロール" },
+      // { label: "原産国", value: "日本" }
     ],
     lpHtml: `
       <div class="vsang-lp-wrap">
 
   <!-- FV（ファーストビュー：テキスト＋画像配置枠） -->
   <section class="vsang-lp-fv">
-    <div class="vsang-lp-inner">
       <div class="vsang-lp-fv-head">
-        <p class="vsang-lp-fv-brand">ACFIT V-SANG</p>
-        <p class="vsang-lp-fv-lead">ゆらぎやすい肌に寄り添う、濃密な一滴のうるおいヴェール</p>
-        <h2 class="vsang-lp-fv-title">V-SANG BETA-G<br class="vsang-lp-sp-only"> AZULENE FOCUS OIL</h2>
-        <p class="vsang-lp-fv-sub">グアイアズレン<sup>※1</sup>とリポソーム設計<sup>※2</sup>で、角質層までみずみずしく包み込む美容オイル。</p>
+       <img src="images/lp/5-fv.jpg">
       </div>
-      <div class="vsang-lp-placeholder vsang-lp-placeholder--fv">
-        <span>FV メインビジュアル配置エリア（推奨：1040 × 560px）</span>
-      </div>
-      <p class="vsang-lp-note">※1 整肌成分 ※2 水添レシチン（保湿・整肌成分）によるリポソーム構造</p>
-    </div>
   </section>
 
   <!-- VOICE & IMPRESSION（お声・使用感） -->
@@ -2173,16 +2086,17 @@ const PRODUCTS_DATA = {
             カモミール由来のグアイアズレンとリポソーム保湿成分、7種の植物由来オイルを凝縮。ゆらぎやすい肌にうるおいとツヤを与える美容オイル。
           </p>
 
+         
           <div class="vsang-lp-buy-select-wrap">
-            <label class="vsang-lp-buy-label">内容量を選択</label>
-            <select class="vsang-lp-buy-select">
-              <option value="30ml">30mL — ¥11,000（税込）</option>
-            </select>
-          </div>
+              <div class="vsang-lp-buy-p">
+                <p>30mL：¥11,000（税込）</p>
+              </div>
+            </div>
 
-          <button type="button" class="vsang-lp-buy-btn" data-product-id="beta-g-azulene-oil">
+          <button type="button" class="vsang-lp-buy-btn" data-product-id="item_05" onclick="addToCart('item_05')">
             カートに入れる
           </button>
+
         </div>
       </div>
     </div>
@@ -2243,9 +2157,9 @@ const PRODUCTS_DATA = {
       "images/v-cream/5.jpg"
     ],
     specs: [
-      { label: "内容量", value: "50ml / 200ml" },
-      { label: "主要成分", value: "ナイアシンアミド、パンテノール、アロエベラエキス、ドクダミエキス" },
-      { label: "原産国", value: "韓国" }
+      // { label: "内容量", value: "50ml / 200ml" },
+      // { label: "主要成分", value: "ナイアシンアミド、パンテノール、アロエベラエキス、ドクダミエキス" },
+      // { label: "原産国", value: "韓国" }
     ],
     lpHtml: `
       <div class="vsang-lp-wrap">
@@ -2641,18 +2555,15 @@ const PRODUCTS_DATA = {
             ハナビラタケエキス67%とβ-グルカン、6種の保湿成分を凝縮。みずみずしく軽やかな使い心地でうるおいを守る高保湿クリーム。
           </p>
 
-          <div class="vsang-lp-buy-select-wrap">
-            <label class="vsang-lp-buy-label">内容量を選択</label>
-            <select class="vsang-lp-buy-select">
-              <option value="15ml">15mL（トライアル） — ¥3,300（税込）</option>
-              <option value="50ml" selected>50mL（レギュラー） — ¥8,800（税込）</option>
-              <option value="200ml">200mL（大容量） — ¥19,800（税込）</option>
+          <div class="vsang-lp-purchase-box" data-lp-variant-box="item_06" style="max-width:340px;margin:20px auto 0;">
+            <select class="vsang-lp-variant-select" style="width:100%;padding:20px;margin-bottom:10px;border:1px solid #cbd5e1;font-size:14px;background:#fff;color:#1a1a1a;">
+              <option value="50ml">50ml — ¥11,000（税込）</option>
+              <option value="200ml">200ml — ¥24,200（税込）</option>
             </select>
+            <button type="button" class="vsang-lp-buy-btn" data-lp-buy-item="item_06" onclick="addLpVariantToCart(this, 'item_06')" style="width:100%;">
+              カートに入れる
+            </button>
           </div>
-
-          <button type="button" class="vsang-lp-buy-btn" data-product-id="v-sang-cream">
-            カートに入れる
-          </button>
         </div>
       </div>
     </div>
@@ -2690,9 +2601,9 @@ const PRODUCTS_DATA = {
       "images/Gel/4.png"
     ],
     specs: [
-      { label: "内容量", value: "200ml（約2ヶ月分）" },
-      { label: "主要成分", value: "ナイアシンアミド、シア脂、スクワラン、トコフェロール" },
-      { label: "原産国", value: "日本" }
+      // { label: "内容量", value: "200ml（約2ヶ月分）" },
+      // { label: "主要成分", value: "ナイアシンアミド、シア脂、スクワラン、トコフェロール" },
+      // { label: "原産国", value: "日本" }
     ],
     lpHtml: `
       <div class="vsang-lp-wrap">
@@ -3090,17 +3001,16 @@ const PRODUCTS_DATA = {
             ハナビラタケエキスと8種のヒアルロン酸、9種の植物由来整肌エキスを配合。顔からボディまで全身をみずみずしく整える高保湿マルチジェル。
           </p>
 
-          <div class="vsang-lp-buy-select-wrap">
-            <label class="vsang-lp-buy-label">内容量を選択</label>
-            <select class="vsang-lp-buy-select">
-              <option value="500ml">500mL — ¥7,700（税込）</option>
-              <option value="1000ml">1000mL — ¥13,200（税込）</option>
-            </select>
-          </div>
+            <div class="vsang-lp-buy-select-wrap">
+              <div class="vsang-lp-buy-p">
+                <p>200mL：¥13,200（税込）</p>
+              </div>
+            </div>
 
-          <button type="button" class="vsang-lp-buy-btn" data-product-id="v-sang-gel">
+          <button type="button" class="vsang-lp-buy-btn" data-product-id="item_07" onclick="addToCart('item_07')">
             カートに入れる
           </button>
+
         </div>
       </div>
     </div>
@@ -3133,9 +3043,9 @@ const PRODUCTS_DATA = {
 
     ],
     specs: [
-      { label: "内容量", value: "150ml（約2ヶ月分）" },
-      { label: "主要成分", value: "ナイアシンアミド、シア脂、スクワラン、トコフェロール" },
-      { label: "原産国", value: "日本" }
+      // { label: "内容量", value: "150ml（約2ヶ月分）" },
+      // { label: "主要成分", value: "ナイアシンアミド、シア脂、スクワラン、トコフェロール" },
+      // { label: "原産国", value: "日本" }
     ],
     lpHtml: `
       <div class="vsang-lp-wrap">
@@ -3527,16 +3437,16 @@ const PRODUCTS_DATA = {
             乳酸菌由来成分と独自複合植物エキス、多層ヒアルロン酸を凝縮。ゆらぎやすい肌にうるおいとツヤを与える大容量高保湿クリーム。
           </p>
 
-          <div class="vsang-lp-buy-select-wrap">
-            <label class="vsang-lp-buy-label">内容量を選択</label>
-            <select class="vsang-lp-buy-select">
-              <option value="150ml">150mL — ¥9,900（税込）</option>
-            </select>
-          </div>
+            <div class="vsang-lp-buy-select-wrap">
+              <div class="vsang-lp-buy-p">
+                <p>150mL：¥19,800（税込）</p>
+              </div>
+            </div>
 
-          <button type="button" class="vsang-lp-buy-btn" data-product-id="beta-g-lacto-care-cream">
+          <button type="button" class="vsang-lp-buy-btn" data-product-id="item_08" onclick="addToCart('item_08')">
             カートに入れる
           </button>
+
         </div>
       </div>
     </div>
@@ -3587,7 +3497,7 @@ const PRODUCTS_DATA = {
     name: "ACFIT VSANG Beta-G Lacto Sun Cream（アクフィット サンクリーム）",
     catchcopy: "紫外線から守り、うるおいと美しい肌印象を保つ日焼け止め",
     prices: {
-      general: 8000,
+      general: 8800,
       agency: 8400,
       vip_agency: 6000
     },
@@ -3999,16 +3909,16 @@ const PRODUCTS_DATA = {
             SPF50+ PA+++の紫外線防御力と、乳酸菌由来成分・7種のヒアルロン酸のうるおいをひとつに。ベタつかず軽やかに密着するデイリーUVクリーム。
           </p>
 
-          <div class="vsang-lp-buy-select-wrap">
-            <label class="vsang-lp-buy-label">内容量を選択</label>
-            <select class="vsang-lp-buy-select">
-              <option value="50ml">50mL — ¥6,600（税込）</option>
-            </select>
-          </div>
+            <div class="vsang-lp-buy-select-wrap">
+              <div class="vsang-lp-buy-p">
+                <p>200mL：¥8,800（税込）</p>
+              </div>
+            </div>
 
-          <button type="button" class="vsang-lp-buy-btn" data-product-id="beta-g-lacto-sun-cream">
+          <button type="button" class="vsang-lp-buy-btn" data-product-id="item_10" onclick="addToCart('item_10')">
             カートに入れる
           </button>
+
         </div>
       </div>
     </div>
@@ -4036,9 +3946,9 @@ const PRODUCTS_DATA = {
       "images/G-immuca/3.jpg"
     ],
     specs: [
-      { label: "内容量", value: "200ml（約2ヶ月分）" },
-      { label: "主要成分", value: "ナイアシンアミド、シア脂、スクワラン、トコフェロール" },
-      { label: "原産国", value: "日本" }
+      // { label: "内容量", value: "200ml（約2ヶ月分）" },
+      // { label: "主要成分", value: "ナイアシンアミド、シア脂、スクワラン、トコフェロール" },
+      // { label: "原産国", value: "日本" }
     ],
     lpHtml: `
       <div class="vsang-lp-wrap">
@@ -4432,16 +4342,16 @@ const PRODUCTS_DATA = {
             カオリン・ベントナイトの2種のクレイと5種のツボクサ由来成分、11種のアミノ酸を配合。余分な皮脂をオフしながらしっとり整える弱酸性クレイマスク。
           </p>
 
-          <div class="vsang-lp-buy-select-wrap">
-            <label class="vsang-lp-buy-label">内容量を選択</label>
-            <select class="vsang-lp-buy-select">
-              <option value="180ml">180mL — ¥7,700（税込）</option>
-            </select>
-          </div>
+            <div class="vsang-lp-buy-select-wrap">
+              <div class="vsang-lp-buy-p">
+                <p>200mL：¥12,000（税込）</p>
+              </div>
+            </div>
 
-          <button type="button" class="vsang-lp-buy-btn" data-product-id="v-sang-clay-immuca">
+          <button type="button" class="vsang-lp-buy-btn" data-product-id="item_11" onclick="addToCart('item_11')">
             カートに入れる
           </button>
+
         </div>
       </div>
     </div>
@@ -4457,12 +4367,32 @@ function getCurrentRank() {
   return "general";
 }
 
-// カートデータ操作（localStorage）
+// ★GASのウェブアプリURL
+const GAS_CHECKOUT_URL = 'https://script.google.com/macros/s/AKfycbzAhe7MGFiVspzAXTtQrM0Bli8s86FbuKLIPWGNae-zhus0zysF10x-ouX6u0Z07Fq_tQ/exec';
+
+// グローバル状態（在庫切れリスト・サロン一覧・お知らせ一覧）
+window.ACFIT_OUT_OF_STOCK = [];
+window.ACFIT_SALONS_DATA = [];
+window.ACFIT_NEWS_DATA = [];
+
+// 在庫切れ判定ヘルパー（バリエーション指定時は「item_06_50ml」単位で判定）
+function isProductOutOfStock(productId, variantId = null) {
+  if (variantId) {
+    return window.ACFIT_OUT_OF_STOCK.includes(`${productId}_${variantId}`);
+  }
+  return window.ACFIT_OUT_OF_STOCK.includes(productId);
+}
+
+// カートデータ操作
 function getCart() {
   return JSON.parse(localStorage.getItem("demo_cart") || "[]");
 }
 
 function addToCart(productId, qty = 1, variantId = null) {
+  if (isProductOutOfStock(productId, variantId)) {
+    alert("申し訳ございません。こちらの商品は現在在庫切れです。");
+    return;
+  }
   const cart = getCart();
   const existing = cart.find(item => item.id === productId && (item.variantId || null) === (variantId || null));
   if (existing) {
@@ -4473,6 +4403,14 @@ function addToCart(productId, qty = 1, variantId = null) {
   localStorage.setItem("demo_cart", JSON.stringify(cart));
   updateCartBadge();
   openCartDrawer();
+}
+
+// LP下部のバリエーション付き商品（item_06など）用カート追加関数
+function addLpVariantToCart(btnEl, productId) {
+  const box = btnEl.closest('[data-lp-variant-box]');
+  const select = box ? box.querySelector('.vsang-lp-variant-select') : null;
+  const variantId = select ? select.value : null;
+  addToCart(productId, 1, variantId);
 }
 
 function removeFromCart(productId, variantId = null) {
@@ -4492,7 +4430,15 @@ function updateCartBadge() {
 
 // 共通ヘッダー・ハンバーガーメニュー・カートドロワーの初期化
 document.addEventListener("DOMContentLoaded", () => {
-  // 共通ヘッダーを挿入
+  // ハンバーガーメニュー内の商品リスト自動生成（右側にサムネイル画像）
+  const productMenuItemsHTML = Object.values(PRODUCTS_DATA).map(p => `
+    <li>
+      <a href="product.html?id=${p.id}" class="drawer-prod-link">
+        <span class="drawer-prod-name">${p.name}</span>
+      </a>
+    </li>
+  `).join("");
+
   const headerHTML = `
     <header class="site-header">
       <div class="header-inner">
@@ -4515,8 +4461,57 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
       <ul class="drawer-nav">
         <li><a href="index.html">TOP / ブランドについて</a></li>
-        <li><a href="products.html">ALL PRODUCTS / 商品一覧</a></li>
-        <li><a href="support.html?category=support">Support / お問い合わせ</a></li>
+
+        <!-- 1. ホームケア｜オンラインストア -->
+        <li class="drawer-accordion">
+          <button type="button" class="drawer-acc-trigger" aria-expanded="false">
+            <span>ホームケア｜オンラインストア</span>
+            <span class="acc-icon">+</span>
+          </button>
+          <ul class="drawer-sub-list">
+            <li>
+              <a href="products.html" class="drawer-all-link">
+                <span>すべて見る</span>
+                <span class="arrow-r">&rsaquo;</span>
+              </a>
+            </li>
+            ${productMenuItemsHTML}
+          </ul>
+        </li>
+
+        <!-- 2. 正規取扱サロンを探す -->
+        <li class="drawer-accordion">
+          <button type="button" class="drawer-acc-trigger" aria-expanded="false">
+            <span>正規取扱サロンを探す</span>
+            <span class="acc-icon">+</span>
+          </button>
+          <ul class="drawer-sub-list">
+            <li><a href="salons.html?mode=area" class="drawer-sub-text-link">エリア/目的で絞る <span>&rsaquo;</span></a></li>
+          </ul>
+        </li>
+
+        <!-- 3. サロンケア｜施術メニュー -->
+        <li><a href="salon-menu.html">サロンケア｜施術メニュー</a></li>
+
+        <!-- 4. お知らせ -->
+        <li><a href="news.html">お知らせ</a></li>
+
+        <!-- 5. サロンへの導入をご検討の方へ -->
+        <li><a href="for-salons.html">サロンへの導入をご検討の方へ</a></li>
+
+        <!-- 7. 導入済みサロン様のご注文（鍵付き注文フォームへ直リンク） -->
+        <li>
+          <a href="https://forms.gle/【導入済みサロン注文フォームID】" target="_blank" rel="noopener" class="drawer-member-order">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-2px;margin-right:6px;">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+            導入済みサロン様のご注文
+          </a>
+        </li>
+
+        <!-- 8. よくあるご質問・お問い合わせ -->
+        <li><a href="support.html">よくあるご質問・お問い合わせ</a></li>
       </ul>
     </nav>
 
@@ -4535,19 +4530,171 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const footerHTML = `
     <footer class="site-footer">
-      <div class="footer-inner">
-        <div class="footer-logo">ACFIT JAPAN</div>
-        <ul class="footer-links">
-          <li><a href="index.html">TOP</a></li>
-          <li><a href="products.html">商品一覧</a></li>
-        </ul>
-        <p class="copyright">&copy; ACFIT JAPAN All Rights Reserved.</p>
+    　<h1 class="hyo">ACFIT 日本総合代理店 | 株式会社 nui</h1>
+      <div class="footer-inner acfit-rich-footer">
+
+        <!-- 上段：3列×2段 メインナビゲーション（PC：3列グリッド / スマホ：縦1列） -->
+        <div class="footer-main-grid">
+          <!-- 1. ホームケア（アコーディオン） -->
+          <div class="footer-nav-block footer-acc-item">
+            <button type="button" class="footer-nav-head footer-acc-btn" aria-expanded="false">
+              <span>ホームケア｜オンラインストア</span>
+              <span class="f-icon-down">&#8964;</span>
+            </button>
+            <ul class="footer-acc-panel">
+              <li><a href="products.html">すべての商品を見る</a></li>
+              <li><a href="product.html?id=item_01">クレンジング</a></li>
+              <li><a href="product.html?id=item_02">トナー（化粧水）</a></li>
+              <li><a href="product.html?id=item_03">スキンブースター</a></li>
+              <li><a href="product.html?id=item_04">ラクトケアアンプル</a></li>
+              <li><a href="product.html?id=item_05">アズレンオイル</a></li>
+              <li><a href="product.html?id=item_06">クリーム</a></li>
+              <li><a href="product.html?id=item_07">ジェル</a></li>
+            </ul>
+          </div>
+
+          <!-- 2. 正規取扱サロンを探す（アコーディオン） -->
+          <div class="footer-nav-block footer-acc-item">
+            <button type="button" class="footer-nav-head footer-acc-btn" aria-expanded="false">
+              <span>正規取扱サロンを探す</span>
+              <span class="f-icon-down">&#8964;</span>
+            </button>
+            <ul class="footer-acc-panel">
+              <li><a href="salons.html?mode=area">エリア/目的で絞る</a></li>
+              <li><a href="salons.html">すべての取扱サロン一覧</a></li>
+            </ul>
+          </div>
+
+          <!-- 3. サロンケア｜施術メニュー -->
+          <div class="footer-nav-block">
+            <a href="salon-menu.html" class="footer-nav-head">
+              <span>サロンケア｜施術メニュー</span>
+              <span class="f-icon-right">&rsaquo;</span>
+            </a>
+          </div>
+
+          <!-- 4. お知らせ・イベント -->
+          <div class="footer-nav-block">
+            <a href="news.html" class="footer-nav-head">
+              <span>お知らせ・イベント</span>
+              <span class="f-icon-right">&rsaquo;</span>
+            </a>
+          </div>
+
+          <!-- 5. サロンへの導入をご検討の方へ -->
+          <div class="footer-nav-block">
+            <a href="for-salons.html" class="footer-nav-head">
+              <span>サロンへの導入をご検討の方へ</span>
+              <span class="f-icon-right">&rsaquo;</span>
+            </a>
+          </div>
+
+          <!-- 6. 導入済みサロン様のご注文（鍵付き直リンク） -->
+          <div class="footer-nav-block">
+            <a href="https://forms.gle/【導入済みサロン注文フォームID】" target="_blank" rel="noopener" class="footer-nav-head">
+              <span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-1px;margin-right:5px;">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+                導入済みサロン様のご注文
+              </span>
+              <span class="f-icon-right">&rsaquo;</span>
+            </a>
+          </div>
+        </div>
+
+       <!-- 中段：左2列サブリンク ＋ 右カスタマーサポート＆導入希望 -->
+        <div class="footer-sub-grid">
+          <div class="footer-sub-links-wrap">
+            <ul class="footer-sub-col">
+              <li><a href="support.html">よくあるご質問</a></li>
+              <li><a href="support.html">お届け・送料について</a></li>
+              <li><a href="support.html">お支払いについて</a></li>
+              <li><a href="support.html">返品・交換について</a></li>
+            </ul>
+            <ul class="footer-sub-col">
+              <li><a href="index.html">ブランドについて</a></li>
+              <li><a href="legal.html">特定商取引法に基づく表記</a></li>
+              <li><a href="privacy.html">プライバシーポリシー</a></li>
+              <li><a href="terms.html">利用規約</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-right-col">
+            <!-- 上：カスタマーサポート -->
+            <div class="footer-support-box">
+              <div class="footer-support-title">
+                <strong>CUSTOMER SUPPORT</strong>
+                <span>カスタマーサポート</span>
+              </div>
+              <p class="footer-support-text">
+                商品やご注文・サロン導入に関する不明点などはこちらからお問い合わせください。
+              </p>
+              <a href="support.html" class="footer-support-btn">
+                <span>お問い合わせ</span>
+                <span class="btn-arrow">&rsaquo;</span>
+              </a>
+            </div>
+
+            <!-- 下：ACFITの導入希望について -->
+            <div class="footer-support-box">
+              <div class="footer-support-title">
+                <strong>卸販売をご希望の事業者様へ</strong>
+              </div>
+              <p class="footer-support-text">
+                他店への卸販売に関するご相談はこちらからお問い合わせください。
+              </p>
+              <a href="for-salons.html" class="footer-support-btn">
+                <span>お問い合わせ</span>
+                <span class="btn-arrow">&rsaquo;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 下段：SNSアイコン横並び ＋ コピーライト -->
+        <div class="footer-bottom-area">
+          <div class="footer-sns-list">
+            <a href="https://line.me/R/ti/p/@acfit_jp" target="_blank" rel="noopener" aria-label="LINE">
+              <svg viewBox="0 0 24 24" width="23" height="23" fill="currentColor">
+                <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/acfit_jp_official?dmpr=MWlzN2o4bDZiZHllMw==" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+          </div>
+          <p class="copyright">&copy; ACFIT JAPAN All Rights Reserved.</p>
+        </div>
+
       </div>
     </footer>
   `;
-
-  
   document.body.insertAdjacentHTML("beforeend", footerHTML);
+
+  // フッター内アコーディオン開閉処理（新しく追加）
+  document.querySelectorAll(".footer-acc-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const item = btn.closest(".footer-acc-item");
+      const isOpen = item.classList.toggle("is-open");
+      btn.setAttribute("aria-expanded", isOpen);
+    });
+  });
+
+  // アコーディオン開閉
+  document.querySelectorAll(".drawer-acc-trigger").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const parent = btn.parentElement;
+      const isOpen = parent.classList.toggle("is-open");
+      btn.setAttribute("aria-expanded", isOpen);
+      btn.querySelector(".acc-icon").textContent = isOpen ? "−" : "+";
+    });
+  });
 
   const menuOverlay = document.getElementById("menu-overlay");
   const drawerMenu = document.getElementById("drawer-menu");
@@ -4560,11 +4707,138 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("menu-close-btn").addEventListener("click", closeAllDrawers);
   document.getElementById("cart-close-btn").addEventListener("click", closeAllDrawers);
   menuOverlay.addEventListener("click", closeAllDrawers);
-
   document.getElementById("cart-open-btn").addEventListener("click", openCartDrawer);
 
   updateCartBadge();
+
+  // LP内のバリエーションプルダウン切り替え時の在庫チェック連動
+  document.addEventListener("change", (e) => {
+    if (e.target && e.target.classList.contains("vsang-lp-variant-select")) {
+      const box = e.target.closest("[data-lp-variant-box]");
+      if (!box) return;
+      const pId = box.getAttribute("data-lp-variant-box");
+      const btn = box.querySelector("[data-lp-buy-item]");
+      if (btn) {
+        updateSingleButtonStock(btn, pId, e.target.value);
+      }
+    }
+  });
+
+  // ページ上部のメインドロップダウン切り替え時の在庫チェック連動
+  const dropdownList = document.getElementById("dropdown-list");
+  if (dropdownList) {
+    dropdownList.addEventListener("click", (e) => {
+      const opt = e.target.closest(".dropdown-option");
+      if (!opt) return;
+      const params = new URLSearchParams(window.location.search);
+      const pId = params.get("id") || "item_01";
+      const mainBtn = document.getElementById("add-cart-btn");
+      if (mainBtn) {
+        updateSingleButtonStock(mainBtn, pId, opt.dataset.id);
+      }
+    });
+  }
+
+  // スプレッドシートから最新設定（メンテナンスモード・在庫・サロン一覧・お知らせ）を自動取得
+  syncSiteSettingsFromSheet();
 });
+
+async function syncSiteSettingsFromSheet() {
+  try {
+    const res = await fetch(`${GAS_CHECKOUT_URL}?t=${Date.now()}`, {
+      cache: 'no-store'
+    });
+    const data = await res.json();
+    if (data.status !== 'success') {
+      console.error('GASエラー:', data.message);
+      return;
+    }
+
+    // A. メンテナンスモードがONなら全画面をメンテナンス表示に切り替える
+    if (data.maintenance) {
+      document.body.innerHTML = `
+        <div style="min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:32px;text-align:center;background:#f8fafc;color:#1a1a1a;font-family:sans-serif;">
+          <p style="font-size:12px;letter-spacing:0.25em;color:#7ab3d8;margin-bottom:12px;">MAINTENANCE</p>
+          <h1 style="font-size:24px;font-weight:600;margin-bottom:20px;">ただいまメンテナンス中です</h1>
+          <p style="font-size:14px;line-height:1.9;color:#555;max-width:480px;">
+            いつも ACFIT JAPAN をご利用いただき誠にありがとうございます。<br>
+            現在システムメンテナンスを実施しております。<br>
+            完了まで今しばらくお待ちくださいますようお願い申し上げます。
+          </p>
+        </div>
+      `;
+      return;
+    }
+
+    // B. 在庫切れリストを反映（メインボタン＋LP直書きボタン＋バリエーションボタンをすべて自動更新）
+    window.ACFIT_OUT_OF_STOCK = data.outOfStock || [];
+    applyStockStatusToButtons();
+
+    // C. サロン一覧データを配信
+    window.ACFIT_SALONS_DATA = data.salons || [];
+    window.dispatchEvent(new CustomEvent('acfit:salonsLoaded', { detail: window.ACFIT_SALONS_DATA }));
+
+    // D. お知らせ一覧データを配信
+    window.ACFIT_NEWS_DATA = data.news || [];
+    window.dispatchEvent(new CustomEvent('acfit:newsLoaded', { detail: window.ACFIT_NEWS_DATA }));
+
+  } catch (e) {
+    console.error('スプレッドシート同期失敗:', e);
+  }
+}
+
+// 画面上のすべての「カートに入れる」ボタンを在庫状況に合わせて更新
+function applyStockStatusToButtons() {
+  const params = new URLSearchParams(window.location.search);
+  const currentProductId = params.get("id") || "item_01";
+  const currentProduct = PRODUCTS_DATA[currentProductId];
+
+  // 1. 商品詳細ページ上部のメインカートボタン
+  const mainBtn = document.getElementById("add-cart-btn");
+  if (mainBtn && currentProduct) {
+    const initialVariantId = (currentProduct.variants && currentProduct.variants.length > 0)
+      ? currentProduct.variants[0].id
+      : null;
+    updateSingleButtonStock(mainBtn, currentProductId, initialVariantId);
+  }
+
+  // 2. LP下部の単体商品ボタン（onclick="addToCart('item_XX')"）
+  document.querySelectorAll('[onclick*="addToCart"]').forEach(btn => {
+    const attr = btn.getAttribute('onclick');
+    const match = attr.match(/addToCart\(\s*['"]([^'"]+)['"](?:\s*,\s*\d+\s*,\s*['"]([^'"]+)['"])?/);
+    if (match) {
+      updateSingleButtonStock(btn, match[1], match[2] || null);
+    }
+  });
+
+  // 3. LP下部のバリエーション付きボックス（item_06 など）
+  document.querySelectorAll('[data-lp-variant-box]').forEach(box => {
+    const pId = box.getAttribute('data-lp-variant-box');
+    const select = box.querySelector('.vsang-lp-variant-select');
+    const btn = box.querySelector('[data-lp-buy-item]');
+    if (btn && select) {
+      updateSingleButtonStock(btn, pId, select.value);
+    }
+  });
+}
+
+function updateSingleButtonStock(btn, productId, variantId = null) {
+  if (isProductOutOfStock(productId, variantId)) {
+    btn.disabled = true;
+    btn.textContent = "在庫なし";
+    btn.style.backgroundColor = "#b0b5bc";
+    btn.style.borderColor = "#b0b5bc";
+    btn.style.color = "#ffffff";
+    btn.style.cursor = "not-allowed";
+  } else {
+    btn.disabled = false;
+    btn.textContent = "カートに入れる";
+    btn.style.backgroundColor = "";
+    btn.style.borderColor = "";
+    btn.style.color = "";
+    btn.style.cursor = "";
+  }
+}
 
 function closeAllDrawers() {
   document.getElementById("drawer-menu").classList.remove("is-open");
@@ -4632,9 +4906,6 @@ function renderCartDrawer() {
     </button>
   `;
 }
-
-// ★GASのウェブアプリURL
-const GAS_CHECKOUT_URL = 'https://script.google.com/macros/s/AKfycbzAhe7MGFiVspzAXTtQrM0Bli8s86FbuKLIPWGNae-zhus0zysF10x-ouX6u0Z07Fq_tQ/exec';
 
 async function proceedToSquareCheckout() {
   const cart = getCart();

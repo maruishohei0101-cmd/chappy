@@ -3,291 +3,240 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>サポート・お問い合わせ | ACFIT JAPAN</title>
+  <title>よくあるご質問・お問い合わせ | ACFIT JAPAN</title>
   <link rel="stylesheet" href="css/style.css">
   <style>
-    /* support.html 専用スタイル（既存style.cssのトーンに統一） */
-    .support-hero {
-      text-align: center;
-      max-width: 720px;
-      margin: 0 auto 48px;
+    .support-container {
+      max-width: 860px;
+      margin: 48px auto 80px;
+      padding: 0 20px;
     }
-
-    .support-hero p {
-      font-size: 15px;
-      color: #555;
-      line-height: 1.8;
-    }
-
-    /* LINE公式アカウント誘導カード */
-    .line-card {
-      max-width: 720px;
-      margin: 0 auto 56px;
-      background: #fff;
-      border: 1px solid #e5e2dc;
-      border-radius: 6px;
-      padding: 44px 32px;
-      text-align: center;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
-    }
-
-    .line-badge {
-      display: inline-block;
-      background: #06C755;
-      color: #fff;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      padding: 4px 12px;
-      border-radius: 20px;
-      margin-bottom: 16px;
-    }
-
-    .line-card h3 {
-      font-size: 22px;
-      font-weight: 500;
-      margin-bottom: 14px;
-      line-height: 1.5;
-    }
-
-    .line-card .line-lead {
-      font-size: 14px;
-      color: #555;
-      margin-bottom: 28px;
-      line-height: 1.8;
-    }
-
-    .line-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      background: #06C755;
-      color: #fff;
+    .sec-title {
       font-size: 20px;
       font-weight: 600;
-      letter-spacing: 0.06em;
-      padding: 16px 40px;
-      border-radius: 50px;
-      box-shadow: 0 6px 16px rgba(6, 199, 85, 0.28);
-      transition: transform 0.2s, background 0.2s;
-      width: 100%;
-      max-width: 80%;
-    }
-    .sb {
-  display: none;
-}
-
-    @media screen and (max-width: 767px) {
-      .line-btn {
-      max-width: 100%;
-      font-size: 13px;
-      padding: 10px;
-      }
-    .line-card .line-lead {
-      font-size: 10px;
-    }
-    .sb {
-    display: inline;
-  }
-  .support-hero p {
-    font-size: 10px;
-  }
-  .line-note {
-    font-size: 10px;
-  }
-    }
-
-    .line-btn:hover {
-      background: #05b34c;
-      transform: translateY(-2px);
-    }
-
-    .line-btn svg {
-      width: 24px;
-      fill: currentColor;
-    }
-
-    .line-note {
-      margin-top: 16px;
-      font-size: 12px;
-      color: #777;
-    }
-
-    /* 代理店・法人向け案内枠（ランクに応じた表示切替用） */
-    .agency-support-box {
-      max-width: 720px;
-      margin: 0 auto 56px;
-      background: #f4f1ea;
-      border-left: 4px solid #8c7b65;
-      padding: 24px 28px;
-      border-radius: 4px;
-    }
-
-    .agency-support-box h4 {
-      font-size: 16px;
-      color: #222;
-      margin-bottom: 8px;
-    }
-
-    .agency-support-box p {
-      font-size: 13px;
-      color: #555;
-      line-height: 1.7;
-    }
-
-    /* よくあるご質問（アコーディオン） */
-    .faq-section {
-      max-width: 720px;
-      margin: 0 auto;
-    }
-
-    .faq-title {
       text-align: center;
-      font-size: 20px;
-      font-weight: 500;
-      margin-bottom: 28px;
-      letter-spacing: 0.08em;
+      color: #1a1a1a;
+      margin: 0 0 28px;
     }
-
+    .faq-cat-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: #1b4d72;
+      background: #eef4f9;
+      padding: 10px 16px;
+      border-left: 4px solid #1b4d72;
+      margin: 32px 0 14px;
+    }
     .faq-item {
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      margin-bottom: 10px;
       background: #fff;
-      border: 1px solid #e5e2dc;
-      border-radius: 4px;
-      margin-bottom: 12px;
-      overflow: hidden;
     }
-
-    .faq-question {
+    .faq-q {
       width: 100%;
+      text-align: left;
+      padding: 16px 20px;
       background: none;
       border: none;
-      padding: 18px 20px;
-      text-align: left;
       font-size: 14px;
       font-weight: 600;
-      color: #222;
+      color: #1a1a1a;
       cursor: pointer;
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 12px;
     }
-
-    .faq-question::after {
-      content: "+";
-      font-size: 20px;
-      font-weight: 400;
-      color: #8c7b65;
-      transition: transform 0.2s;
-    }
-
-    .faq-item.is-open .faq-question::after {
-      content: "−";
-    }
-
-    .faq-answer {
+    .faq-a {
       display: none;
-      padding: 0 20px 20px;
+      padding: 0 20px 18px;
       font-size: 13px;
-      color: #555;
-      line-height: 1.8;
-      border-top: 1px solid #f2efe9;
+      line-height: 1.9;
+      color: #444;
+      border-top: 1px solid #f1f5f9;
       padding-top: 14px;
     }
-
-    .faq-item.is-open .faq-answer {
+    .faq-item.is-open .faq-a {
       display: block;
     }
-
-    @media (max-width: 768px) {
-      .line-card {
-        padding: 32px 20px;
-      }
-      .line-card h3 {
-        font-size: 19px;
+    .faq-link {
+      display: inline-block;
+      margin-top: 8px;
+      color: #1769aa;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+    /* お問い合わせ3入口 */
+    .contact-section {
+      margin-top: 64px;
+      padding-top: 48px;
+      border-top: 1px solid #e2e8f0;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .contact-card {
+      background: #fff;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      padding: 24px 18px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .contact-card h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin: 0 0 10px;
+    }
+    .contact-card p {
+      font-size: 12px;
+      line-height: 1.7;
+      color: #555;
+      margin: 0 0 18px;
+    }
+    .contact-btn {
+      display: block;
+      padding: 12px 10px;
+      background: #1a1a1a;
+      color: #fff;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 600;
+      border-radius: 4px;
+    }
+    .contact-btn.is-blue {
+      background: #1b4d72;
+    }
+    @media (max-width: 767px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
       }
     }
   </style>
 </head>
 <body>
 
-  <section class="section-block">
-    <div class="container">
-      <div class="section-title">
-        <h2 >サポート・お問い合わせ</h2>
-      </div>
+  <div class="page-header">
+    <h1>よくあるご質問・お問い合わせ</h1>
+  </div>
 
-      <div class="support-hero">
-        <p>商品の選び方やご使用方法、ご注文内容の確認、<br class="sb">代理店お取引に関するご相談など、<br>公式LINEアカウントよりお気軽にお問い合わせください。</p>
-      </div>
+  <main class="support-container">
 
-      <!-- LINE公式アカウント誘導カード -->
-      <div class="line-card">
-        <p class="line-lead">
-          友だち追加後、トーク画面より<br class="sb">お問い合わせ内容をお送りください。<br><br class="sb">
-          お肌のお悩みに合わせたアイテムのご提案や、<br class="sb">在庫・配送状況のご確認もLINEから承っております。
-        </p>
+    <section>
+      <h2 class="sec-title">よくあるご質問</h2>
 
-        <!-- ★本番のLINE友だち追加URL（https://lin.ee/〇〇）に差し替えてください -->
-        <a href="https://line.me/R/ti/p/@example" target="_blank" rel="noopener noreferrer" class="line-btn">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
-          </svg>
-          公式LINEで相談・問い合わせる
-        </a>
+      <!-- カテゴリ1：商品・購入 -->
+      <h3 class="faq-cat-title">商品・購入について</h3>
 
-        <p class="line-note">受付時間：平日 10:00〜18:00<br class="sb">（土日祝・年末年始を除く）<br><br class="sb">※営業時間外のお問い合わせは翌営業日より順次ご返信いたします。</p>
-      </div>
-
-      <!-- よくあるご質問 -->
-      <div class="faq-section">
-        <h3 class="faq-title">よくあるご質問（FAQ）</h3>
-
-        <div class="faq-item">
-          <button class="faq-question" type="button">注文してからどれくらいで届きますか？</button>
-          <div class="faq-answer">通常、決済完了後1〜3営業日以内に発送いたします。発送完了後にお荷物のお問い合わせ番号をご案内いたします。</div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" type="button">代理店価格で購入するにはどうすればよいですか？</button>
-          <div class="faq-answer">事前に代理店アカウントの登録が必要です。公式LINEよりお申し込みいただき、発行された専用IDでログインしていただくと自動的に卸価格が適用されます。</div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" type="button">支払い方法は何に対応していますか？</button>
-          <div class="faq-answer">各種クレジットカード決済（Square決済）に対応しております。決済情報は暗号化され安全に処理されます。</div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" type="button">敏感肌でも使用できますか？</button>
-          <div class="faq-answer">無香料・無着色・アルコールフリーの低刺激処方を採用しておりますが、すべての方に刺激が起きないわけではございません。ご不安な場合はLINEにて成分表のご案内も可能です。</div>
+      <div class="faq-item">
+        <button type="button" class="faq-q"><span>Q. 近くで商品を購入できる店舗はありますか？</span><span>+</span></button>
+        <div class="faq-a">
+          はい、全国の正規取扱サロンにてお買い求めいただけます。「商品を購入したい」の条件で対応サロンを検索できます。<br>
+          <a href="salons.html?mode=purpose" class="faq-link">正規取扱サロンを探すページへ &rsaquo;</a>
         </div>
       </div>
 
-    </div>
-  </section>
+      <div class="faq-item">
+        <button type="button" class="faq-q"><span>Q. オンラインから直接購入することはできますか？</span><span>+</span></button>
+        <div class="faq-a">
+          はい、公式オンラインストアより全ホームケア商品をご購入いただけます。<br>
+          <a href="products.html" class="faq-link">ホームケア｜オンラインストアへ &rsaquo;</a>
+        </div>
+      </div>
 
-  <!-- 共通ヘッダー・ハンバーガーメニュー・カート・フッターを読み込み -->
+      <!-- カテゴリ2：取扱サロン・施術 -->
+      <h3 class="faq-cat-title">取扱サロン・施術について</h3>
+
+      <div class="faq-item">
+        <button type="button" class="faq-q"><span>Q. ブルーピールを受けられるサロンはどこで探せますか？</span><span>+</span></button>
+        <div class="faq-a">
+          正規取扱サロン検索ページにて、エリアや「ブルーピールを受けたい」の目的別に対応店舗をお探しいただけます。<br>
+          <a href="salons.html?mode=purpose" class="faq-link">ブルーピール対応サロンを探す &rsaquo;</a>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button type="button" class="faq-q"><span>Q. サロン施術メニューにはどのようなものがありますか？</span><span>+</span></button>
+        <div class="faq-a">
+          「ブルーピール」「フリーズドライアンプル」「セキュアアンプル」の3つの専用商材を用いた施術をご提供しております。<br>
+          <a href="salon-menu.html" class="faq-link">サロンケア｜施術メニューを見る &rsaquo;</a>
+        </div>
+      </div>
+
+      <!-- カテゴリ3：サロンへの導入 -->
+      <h3 class="faq-cat-title">サロンへの導入について</h3>
+
+      <div class="faq-item">
+        <button type="button" class="faq-q"><span>Q. 商品の販売のみでも導入できますか？</span><span>+</span></button>
+        <div class="faq-a">
+          はい、ブルーピール施術を導入せず、ホームケア商品の販売のみでの導入も可能です。詳しくは導入案内ページをご覧いただくか、導入相談フォームよりお問い合わせください。<br>
+          <a href="for-salons.html" class="faq-link">サロンへの導入をご検討の方へ &rsaquo;</a>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button type="button" class="faq-q"><span>Q. 講習時間はどれくらいですか？</span><span>+</span></button>
+        <div class="faq-a">
+          ブルーピール導入の対面講習は<strong>6時間</strong>です。カウンセリング・肌の見方・商品選定・ブルーピールの手技・アンプルの使い方まで実践的に学べます。<br>
+          <a href="for-salons.html" class="faq-link">導入の流れ・講習詳細を見る &rsaquo;</a>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button type="button" class="faq-q"><span>Q. 導入後の追加注文はどこからできますか？</span><span>+</span></button>
+        <div class="faq-a">
+          導入済みサロン様専用の鍵付き注文フォームより、オンラインで24時間追加注文が可能です。<br>
+          <a href="https://forms.gle/【導入済みサロン注文フォームID】" target="_blank" rel="noopener" class="faq-link">導入済みサロン様のご注文フォームへ &rsaquo;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- お問い合わせ3つの入口 -->
+    <section class="contact-section">
+      <h2 class="sec-title">お問い合わせ</h2>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div>
+            <h3>導入に関するご相談</h3>
+            <p>新規導入・説明会・施術体験のご希望はこちらからお問い合わせください。</p>
+          </div>
+          <a href="https://forms.gle/【導入相談フォームID】" target="_blank" rel="noopener" class="contact-btn is-blue">導入相談フォームへ</a>
+        </div>
+
+        <div class="contact-card">
+          <div>
+            <h3>導入済みサロン様のお問い合わせ</h3>
+            <p>お取り扱い中の商材・施術・販促物に関するご質問はこちら。</p>
+          </div>
+          <a href="https://forms.gle/【導入済みサロン問い合わせフォームID】" target="_blank" rel="noopener" class="contact-btn">サロン様専用フォームへ</a>
+        </div>
+
+        <div class="contact-card">
+          <div>
+            <h3>その他・一般のお問い合わせ</h3>
+            <p>商品のご使用方法やご注文に関するお問い合わせはこちら。</p>
+          </div>
+          <a href="https://forms.gle/【一般お問い合わせフォームID】" target="_blank" rel="noopener" class="contact-btn">一般お問い合わせへ</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
   <script src="js/products.js"></script>
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      // FAQアコーディオン開閉
-      document.querySelectorAll(".faq-question").forEach(btn => {
-        btn.addEventListener("click", () => {
-          btn.parentElement.classList.toggle("is-open");
-        });
+    document.querySelectorAll(".faq-q").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const item = btn.parentElement;
+        const isOpen = item.classList.toggle("is-open");
+        btn.querySelector("span:last-child").textContent = isOpen ? "−" : "+";
       });
-
-      // ログイン状態（ランク）に応じたメッセージ調整
-      const rank = getCurrentRank();
-      const noticeEl = document.getElementById("agency-notice");
-      if (rank === "agency" || rank === "vip_agency") {
-        noticeEl.innerHTML = `
-          <h4>【${RANK_LABELS[rank]} 様専用窓口】</h4>
-          <p>いつもお取引いただきありがとうございます。大口ロットのご相談や販促POP・テスターのご依頼も上記公式LINEより直接担当者へご連絡いただけます。</p>
-        `;
-      }
     });
   </script>
 </body>

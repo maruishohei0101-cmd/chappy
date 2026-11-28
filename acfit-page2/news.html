@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お知らせ・イベント | ACFIT JAPAN</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="page-header">
+    <h1>お知らせ</h1>
+  </div>
+
+  <main class="news-container">
+    <div class="news-tabs">
+      <button type="button" class="news-tab is-active" data-cat="ALL">すべて</button>
+      <button type="button" class="news-tab" data-cat="イベント">イベント（説明会・体験会・セミナー）</button>
+      <button type="button" class="news-tab" data-cat="お知らせ">お知らせ</button>
+    </div>
+
+    <div class="news-list" id="news-list">
+      <p style="padding:32px 8px;color:#666;font-size:13px;">お知らせを読み込み中...</p>
+    </div>
+  </main>
+
+  <script src="js/products.js"></script>
+  <script>
+    let allNews = [];
+    let currentCat = "ALL";
+
+    function renderNews() {
+      const listEl = document.getElementById("news-list");
+      const filtered = allNews.filter(item => currentCat === "ALL" || item.category === currentCat);
+
+      if (filtered.length === 0) {
+        listEl.innerHTML = `<p style="padding:32px 8px;color:#666;font-size:13px;">該当するお知らせはありません。</p>`;
+        return;
+      }
+
+      listEl.innerHTML = filtered.map(item => {
+        const badgeClass = item.category === "イベント" ? "cat-event" : "cat-info";
+        const contentHTML = `
+          <div class="news-meta">
+            <span class="news-date">${item.date}</span>
+            <span class="news-cat ${badgeClass}">${item.category}</span>
+          </div>
+          <h2 class="news-title">${item.title}</h2>
+          <p class="news-body">${item.body}</p>
+        `;
+
+        if (item.url) {
+          const isExternal = item.url.startsWith("http");
+          const targetAttr = isExternal ? `target="_blank" rel="noopener"` : "";
+          return `
+            <article class="news-item">
+              <a href="${item.url}" ${targetAttr} style="display:block;text-decoration:none;color:inherit;">
+                ${contentHTML}
+                <span style="display:inline-block;margin-top:10px;font-size:12px;font-weight:600;color:#1769aa;">詳細を見る &rsaquo;</span>
+              </a>
+            </article>
+          `;
+        }
+
+        return `
+          <article class="news-item">
+            ${contentHTML}
+          </article>
+        `;
+      }).join("");
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".news-tab").forEach(tab => {
+        tab.addEventListener("click", () => {
+          document.querySelectorAll(".news-tab").forEach(t => t.classList.remove("is-active"));
+          tab.classList.add("is-active");
+          currentCat = tab.dataset.cat;
+          renderNews();
+        });
+      });
+
+      if (window.ACFIT_NEWS_DATA && window.ACFIT_NEWS_DATA.length > 0) {
+        allNews = window.ACFIT_NEWS_DATA;
+        renderNews();
+      }
+    });
+
+    window.addEventListener("acfit:newsLoaded", (e) => {
+      allNews = e.detail || [];
+      renderNews();
+    });
+  </script>
+</body>
+</html>
